@@ -1,5 +1,9 @@
 import React from 'react';
+import styled from 'react-emotion';
 
-const test = () => (<h1>Hello World</h1>)
+const Test = (props) => (<h1 {...props}>Hello World</h1>)
+const StyledTest = styled(Test)`
+  color: red;
+`
 
-export default test;
+export default StyledTest;
