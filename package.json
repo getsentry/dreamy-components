@@ -1,0 +1,39 @@
+{
+  "name": "sentry-dreamy-components",
+  "version": "0.0.1",
+  "description": "Cool Looking Components That Do Basically Nothing",
+  "main": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/getsentry/platformicons.git"
+  },
+  "keywords": [
+    "web",
+    "framework",
+    "icons"
+  ],
+  "author": "Chrissy <christopherchristopherclark@gmail.com>",
+  "license": "SIL OFL 1.1",
+  "bugs": {
+    "url": "https://github.com/getsentry/sentry-dreamy-components/issues"
+  },
+  "homepage": "https://github.com/getsentry/sentry-dreamy-components/platformicons",
+  "devDependencies": {
+    "babel-plugin-emotion": "^9.2.6",
+    "emotion": "^9.2.6",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-emotion": "^9.2.6",
+    "@storybook/react": "^3.4.8",
+    "@storybook/addon-actions": "^3.4.8",
+    "@storybook/addon-links": "^3.4.8",
+    "@storybook/addons": "^3.4.8",
+    "babel-core": "^6.26.3",
+    "babel-runtime": "^6.26.0"
+  },
+  "dependencies": {},
+  "scripts": {
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  }
+}
