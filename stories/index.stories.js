@@ -9,3 +9,4 @@ import Issue from '../components/issue';
 
 storiesOf('Issue', module)
   .add('default', () => <Issue />)
+  .add('success', () => <Issue priority="success"/>)
