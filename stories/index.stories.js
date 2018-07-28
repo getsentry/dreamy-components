@@ -4,8 +4,8 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 
-import Test from '../components/test';
+import Issue from '../components/issue';
 
 
-storiesOf('Test', module)
-  .add('default', () => <Test />)
+storiesOf('Issue', module)
+  .add('default', () => <Issue />)
