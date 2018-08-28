@@ -8,7 +8,7 @@ const Card = styled('div')`
   box-shadow: ${p => p.theme.dropShadowHeavy};
   background: ${p => p.priority ? p.theme.alert[p.priority].background : "#fff"};
   font-family: sans-serif;
-  min-height: 200px;
+  min-height: 100px;
 `;
 
 export default Card;

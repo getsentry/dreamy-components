@@ -6,6 +6,7 @@ import { linkTo } from '@storybook/addon-links';
 
 import Issue from '../components/issue';
 import Card from '../components/card';
+import CommitLine from '../components/commit-line';
 
 
 storiesOf('Issue', module)
@@ -16,3 +17,6 @@ storiesOf('Card', module)
   .add('default', () => <Card />)
   .add('success', () => <Card priority="success"/>)
   .add('error', () => <Card priority="error"/>)
+
+storiesOf('Commit Line', module)
+  .add('default', () => <CommitLine style={{width: "500px", margin: "2em"}}>9956ddd</CommitLine>)
