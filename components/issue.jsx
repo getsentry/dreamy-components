@@ -14,12 +14,12 @@ const Issue = ({priority, ...props}) => {
     </div>
   )
 }
-const StyledTest = styled(Issue)`
+const StyledIssue = styled(Issue)`
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0.5em 0.5em 0.5em 1em;
-  background: ${p => p.priority == 'success' ? '#4DC891' : '#BD2215'};
+  background: ${p => p.theme.alert[p.priority || 'error'].background};
   font-size: 1.2em;
   font-family: sans-serif;
   color: #fff;
@@ -36,4 +36,4 @@ const StyledIcon = styled(({priority, ...props}) => (priority == 'success') ? <I
   width: 2em;
 `;
 
-export default StyledTest;
+export default StyledIssue;
