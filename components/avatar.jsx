@@ -1,12 +1,10 @@
 import React from 'react';
 import styled from 'react-emotion';
-import IconCircleCheck from './icon-circle-check';
-import IconCircleExclamation from './icon-circle-exclamation';
 
-const Avatar = ({src, ...props}) => {
+const Avatar = ({src, borderless, ...props}) => {
   return (
     <Container {...props}>
-      <ImageCropper>
+      <ImageCropper borderless={borderless}>
         <ImageFill src={src} />
       </ImageCropper>
     </Container>
@@ -26,8 +24,8 @@ const Container = styled('div')`
 `;
 
 const ImageCropper = styled('div')`
-  width: 84%;
-  height: 84%;
+  width: ${p => p.borderless ? "100%" : "84%"};
+  height: ${p => p.borderless ? "100%" : "84%"};
   border-radius: 50%;
   overflow: hidden;
 `;
