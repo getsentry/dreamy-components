@@ -3,19 +3,21 @@ import styled from 'react-emotion';
 import IconCircleCheck from './icon-circle-check';
 import IconCircleExclamation from './icon-circle-exclamation';
 
-const Issue = ({priority, ...props}) => {
+const Issue = ({priority, triangleUp, name, description, ...props}) => {
   return (
-    <div {...props}>
+    <StyledIssue {...props} priority={priority}>
       <div>
-        <IssueName>ReferenceError</IssueName>
-        <span>/api/1/components</span>
+        {name && <IssueName>{name}</IssueName>}
+        {description && <span>{description}</span>}
       </div>
       <StyledIcon priority={priority}/>
-    </div>
+      {triangleUp && <TriangleUp priority={priority} />}
+    </StyledIssue>
   )
 }
-const StyledIssue = styled(Issue)`
-  display: flex;
+
+const StyledIssue = styled('div')`
+  display: inline-flex;
   align-items: center;
   justify-content: space-between;
   padding: 0.5em 0.5em 0.5em 1em;
@@ -24,6 +26,8 @@ const StyledIssue = styled(Issue)`
   font-family: sans-serif;
   color: #fff;
   border-radius: 2em;
+  margin-top: ${p => p.triangleUp ? "0.5em" : null};
+  position: relative;
 `;
 
 const IssueName = styled('span')`
@@ -31,9 +35,22 @@ const IssueName = styled('span')`
   margin-right: 0.5em;
 `;
 
+const TriangleUp = styled('div')`
+  width: 0;
+  height: 0;
+  border-left: 0.5em solid transparent;
+  border-right: 0.5em solid transparent;
+  border-bottom: 0.5em solid ${p => p.theme.alert[p.priority || 'error'].background};
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  transform: translateX(-50%);
+`;
+
 const StyledIcon = styled(({priority, ...props}) => (priority == 'success') ? <IconCircleCheck {...props} /> : <IconCircleExclamation  {...props} />)`
   height: 2em;
   width: 2em;
+  margin-left: 0.5em;
 `;
 
-export default StyledIssue;
+export default Issue;

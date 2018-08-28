@@ -11,8 +11,9 @@ import Avatar from '../components/avatar';
 import Badge from '../components/badge';
 
 storiesOf('Issue', module)
-  .add('default', () => <Issue />)
-  .add('success', () => <Issue priority="success"/>)
+  .add('default', () => <Issue name="TypeError" description="/api/0/projects/"/>)
+  .add('success', () => <Issue name="DoesNotExist" description="/extensions/github/web/" priority="success"/>)
+  .add('triangleUp', () => <Issue description="E3fc2x" priority="attention" triangleUp={true} style={{fontSize: "0.875em"}}/>)
 
 storiesOf('Card', module)
   .add('default', () => <Card />)
