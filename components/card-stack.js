@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'react-emotion';
+import styled, {keyframes} from 'react-emotion';
 
 const CardStack = ({children, ...props}) => {
   const childrenAsArray = React.Children.toArray(children);
@@ -41,10 +41,22 @@ const Container = styled('div')`
   top: 1em;
 `;
 
+const animate = p => keyframes`
+  0% {
+    transform-origin: center center;
+    transform: translate(0%, 0%);
+  }
+  100% {
+    transform-origin: center center;
+    transform: translate(${p.transformAmount / 25}%, ${p.transformAmount / 10}%);
+  }
+`;
+
 const Wrapper = styled('div')`
-  transform: translate(${p => p.transformAmount / 25}%, ${p => p.transformAmount / 10}%);
+  animation: 0.4s ${animate};
   position: absolute;
   width: 100%;
+  transform: translate(${p => p.transformAmount / 25}%, ${p => p.transformAmount / 10}%);
 `;
 
 export default CardStack;
