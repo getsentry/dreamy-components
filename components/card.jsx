@@ -28,6 +28,8 @@ const Header = styled('div')`
   border-radius: 26px 26px 0 0;
   padding: 0.75em 1em;
   color: #fff;
+  display: flex;
+  align-items: center;
   background: ${p => p.priority ? p.theme.alert[p.priority].background : p.theme.purple};
   border-bottom: 1px solid ${p => p.priority ? p.theme.alert[p.priority].border : "#fff"};
 
