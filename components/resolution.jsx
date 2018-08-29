@@ -26,7 +26,7 @@ const makeAnimation = p => keyframes`
   }
   ${p.startAsError && `
     10% {
-      transform: scale(1.02);
+      transform: scale(1.01);
     }
   `}
   20% {
