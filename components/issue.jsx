@@ -68,9 +68,8 @@ const StyledIcon = styled(({priority, ...props}) => (priority == 'success') ? <I
   height: 2em;
   width: 2em;
   margin-left: 0.5em;
-  transform: scale(0.5);
-  opacity: 0;
-
+  ${p => p.animate && "transform: scale(0.5);"}
+  ${p => p.animate && "opacity: 0;"}
   animation: ${p => p.animate && `0.5s ${growOut} forwards`};
   animation-delay: ${p => p.animationDelay};
 `;
