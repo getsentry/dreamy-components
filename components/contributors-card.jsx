@@ -4,7 +4,7 @@ import Badge from './badge';
 import Card from './card';
 
 const ContributorsLine = ({name, src, score, ...props}) => (
-  <LineContainer>
+  <LineContainer {...props}>
     <StyledBadge name={name} src={src} />
     <LineChart score={score}/>
     <LineNumber>{score}</LineNumber>
