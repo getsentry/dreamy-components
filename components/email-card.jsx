@@ -32,6 +32,7 @@ const ContributorsCard = ({hash, ...props}) => (
       name="Chris"
       src="https://sentry.io/_assets/people/ckj-274e99b013127e748e6ea1e7d6cec774cf60609c7b19872abb984964fdca3604.jpg"
       message="Fix aliases for tag columns"
+      noDelimiter={true}
     />
   </Card>
 )
@@ -57,7 +58,7 @@ const EmailMessage = styled('span')`
 `;
 
 const StyledIconMail = styled(IconMail)`
-  width: 1.25em;
+  width: 1.5em;
   fill: #fff;
   margin-right: 0.5em;
 `;

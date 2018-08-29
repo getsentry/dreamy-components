@@ -1,4 +1,4 @@
-//this is a fork of the Sentry theme.
+//this is a fork of the Sentry theme. It is not the same nor should it be!
 
 const theme = {
   // Colors
@@ -57,7 +57,7 @@ const theme = {
   borderRadius: '10px',
 
   dropShadowLight: '0 2px 0 rgba(37, 11, 54, 0.04)',
-  dropShadowHeavy: '0 1px 4px 1px rgba(47,40,55,0.08), 0 4px 16px 0 rgba(47,40,55,0.12)',
+  dropShadowHeavy: '0 0 4px 1px rgba(47,40,55,0.08), 0 0 16px 0 rgba(47,40,55,0.12)',
 
   background: '#fff',
 

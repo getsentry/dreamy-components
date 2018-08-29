@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'react-emotion';
 
-const Card = ({header, children, ...props}) => (
+const Card = ({header, children, alternateHeaderColor, ...props}) => (
   <Container {...props} header={!!header}>
-    {header && <Header priority={props.priority}>{header}</Header>}
+    {header && <Header priority={props.priority} alternateHeaderColor={alternateHeaderColor}>{header}</Header>}
     {children}
   </Container>
 );
@@ -24,13 +24,16 @@ const Container = styled('div')`
   ` : null}
 `;
 
+const getHeaderColor = p => p.alternateHeaderColor ? p.theme[p.alternateHeaderColor] : p.theme.purple;
+
 const Header = styled('div')`
   border-radius: 26px 26px 0 0;
-  padding: 0.75em 1em;
+  padding: 1em 1em 0.75em 1em;
   color: #fff;
   display: flex;
+  font-size: 0.875em;
   align-items: center;
-  background: ${p => p.priority ? p.theme.alert[p.priority].background : p.theme.purple};
+  background: ${p => p.priority ? p.theme.alert[p.priority].background : getHeaderColor(p)};
   border-bottom: 1px solid ${p => p.priority ? p.theme.alert[p.priority].border : "#fff"};
 
   ${p => (!p.priority || p.priority == 'light') ? `
