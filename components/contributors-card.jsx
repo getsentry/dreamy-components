@@ -32,6 +32,7 @@ const ContributorsCard = props => (
       name="Dena"
       src="https://sentry.io/_assets/people/denamwangi-e522c9cae55e1a226b03e57bed5a27a44a92fe870fe2de0a6559a8fb4bdaece5.jpg"
       score={6}
+      noDelimiter={true}
     />
   </Card>
 )
@@ -51,7 +52,7 @@ const expandOut = keyframes`
 `
 
 const LineContainer = styled('div')`
-  border-bottom: 1px solid ${p => p.theme.borderLighter};
+  border-bottom: ${p => !p.noDelimiter && `1px solid ${p.theme.borderLight}`};
   padding: 1.25em 1.5em 1.25em 1em;
   display: grid;
   grid-template-columns: auto 1fr 2em;

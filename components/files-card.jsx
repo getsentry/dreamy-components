@@ -23,6 +23,7 @@ const FileCard = props => (
     />
     <FileLine
       filename="js/urls.js"
+      noDelimiter={true}
     />
   </Card>
 )
@@ -42,7 +43,7 @@ const expandOut = keyframes`
 `
 
 const LineContainer = styled('div')`
-  border-bottom: 1px solid ${p => p.theme.purpleLightest};
+  border-bottom: ${p => !p.noDelimiter && `1px solid ${p.theme.purpleLightest}`};
   padding: 1.25em 1.5em 1.25em 1em;
   display: grid;
   grid-template-columns: auto 1fr;
