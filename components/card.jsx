@@ -28,7 +28,7 @@ const getHeaderColor = p => p.alternateHeaderColor ? p.theme[p.alternateHeaderCo
 
 const Header = styled('div')`
   border-radius: 26px 26px 0 0;
-  padding: 1em 1em 0.75em 1em;
+  padding: 1.25em 1em 1em 1em;
   color: #fff;
   display: flex;
   font-size: 0.875em;

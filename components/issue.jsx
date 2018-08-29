@@ -1,16 +1,16 @@
 import React from 'react';
-import styled from 'react-emotion';
+import styled, {keyframes} from 'react-emotion';
 import IconCircleCheck from './icon-circle-check';
 import IconCircleExclamation from './icon-circle-exclamation';
 
-const Issue = ({priority, triangleUp, name, description, ...props}) => {
+const Issue = ({priority, triangleUp, name, description, animate, animationDelay, ...props}) => {
   return (
     <StyledIssue {...props} priority={priority}>
       <div>
         {name && <IssueName>{name}</IssueName>}
         {description && <Description priority={priority}>{description}</Description>}
       </div>
-      <StyledIcon priority={priority}/>
+      <StyledIcon priority={priority} animate={animate} animationDelay={animationDelay} />
       {triangleUp && <TriangleUp priority={priority} />}
     </StyledIssue>
   )
@@ -53,10 +53,26 @@ const TriangleUp = styled('div')`
   transform: translateX(-50%);
 `;
 
+const growOut = keyframes`
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+`;
+
 const StyledIcon = styled(({priority, ...props}) => (priority == 'success') ? <IconCircleCheck {...props} /> : <IconCircleExclamation  {...props} />)`
   height: 2em;
   width: 2em;
   margin-left: 0.5em;
+  transform: scale(0.5);
+  opacity: 0;
+
+  animation: ${p => p.animate && `0.5s ${growOut} forwards`};
+  animation-delay: ${p => p.animationDelay};
 `;
 
 export default Issue;
