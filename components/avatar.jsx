@@ -18,7 +18,6 @@ const Container = styled('div')`
   align-items: center;
   justify-content: center;
   border-radius: 100%;
-  ${p => console.log(p)}
   background: ${p => p.priority ? p.theme.alert[p.priority].background : p.theme.gray1};
   overflow: hidden;
 `;

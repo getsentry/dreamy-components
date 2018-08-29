@@ -1,4 +1,4 @@
-//this is a subset of the Sentry theme.
+//this is a fork of the Sentry theme.
 
 const theme = {
   // Colors
@@ -62,35 +62,25 @@ const theme = {
   background: '#fff',
 
   alert: {
-    default: {
-      backgroundLight: '#FAF9FB',
-      background: '#BDB4C7',
+    light: {
+      backgroundLight: '#E2DBE8',
+      background: '#483A95',
       border: '#E2DBE8',
     },
-    info: {
-      backgroundLight: '#F5FAFE',
-      border: '#B5D6ED',
-    },
-    attention: {
-      backgroundLight: '#ECBFA6',
-      background: '#F09E71',
-      border: '#D0816D',
-    },
-    warning: {
-      backgroundLight: '#FFFDF7',
-      background: '#f9a66d',
-      border: '#E1D697',
+    dark: {
+      backgroundLight: '#CEC8FD',
+      background: '#483A95',
+      border: '#8B7FD7',
     },
     success: {
-      backgroundLight: '#F8FCF7',
+      backgroundLight: '#DAF8E9',
       background: '#57be8c',
-      border: '#BBD6B3',
+      border: '#DAF8E9',
     },
     error: {
-      backgroundLight: '#FDF6F5',
+      backgroundLight: '#E4B4B0',
       background: '#e03e2f',
-      border: '#E7C0BC',
-      textLight: '#92635f',
+      border: '#D0021B',
     }
   },
 

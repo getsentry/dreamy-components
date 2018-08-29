@@ -8,7 +8,7 @@ const Issue = ({priority, triangleUp, name, description, ...props}) => {
     <StyledIssue {...props} priority={priority}>
       <div>
         {name && <IssueName>{name}</IssueName>}
-        {description && <span>{description}</span>}
+        {description && <Description priority={priority}>{description}</Description>}
       </div>
       <StyledIcon priority={priority}/>
       {triangleUp && <TriangleUp priority={priority} />}
@@ -28,6 +28,12 @@ const StyledIssue = styled('div')`
   border-radius: 2em;
   margin-top: ${p => p.triangleUp ? "0.5em" : null};
   position: relative;
+  font-smooth: antialiased;
+  -webkit-font-smoothing: antialiased;
+`;
+
+const Description = styled('span')`
+  color: ${p => p.theme.alert[p.priority || 'error'].backgroundLight};
 `;
 
 const IssueName = styled('span')`
