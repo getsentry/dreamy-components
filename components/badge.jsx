@@ -14,7 +14,7 @@ const Badge = ({name, src, ...props}) => {
 const Container = styled('div')`
   display: flex;
   align-items: center;
-  font-weight: bold;
+  font-weight: 500;
   font-family: sans-serif;
   color: ${p => p.theme.gray4};
 `;
@@ -22,7 +22,7 @@ const Container = styled('div')`
 const StyledAvatar = styled(Avatar)`
   width: 1.5em;
   height: 1.5em;
-  margin-right: 0.33em;
+  margin-right: 0.5em;
 `;
 
 export default Badge;

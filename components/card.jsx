@@ -12,7 +12,6 @@ const Container = styled('div')`
   border-radius: 26px;
   display: flex;
   flex-direction: column;
-  padding: ${p => p.header ? "0 0 26px" : "13px 0 13px 0"};
   color: ${p => (!p.priority || p.priority == 'light') ? p.theme.gray7 : "#fff"};
   box-shadow: ${p => p.theme.dropShadowHeavy};
   background: ${p => p.priority ? p.theme.alert[p.priority].background : "#fff"};
