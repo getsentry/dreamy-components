@@ -21,16 +21,16 @@ const rotation = (operator = 1) => keyframes`
   0% {
     transform: rotate(0deg);
   }
-  20% {
+  10% {
     transform: rotate(${180 * operator}deg);
   }
-  50% {
+  25% {
     transform: rotate(${180 * operator}deg);
   }
-  70% {
+  35% {
     transform: rotate(0deg);
   }
-  100% {
+  50% {
     transform: rotate(0deg);
   }
 `;
@@ -46,22 +46,26 @@ const getAvatarAnimation = (p) => {
       border-color: ${startColor};
       transform: scale(${startSize}) rotate(0deg);
     }
-    20% {
+    10% {
       border-color: ${endColor};
       transform: scale(${startSize}) rotate(-180deg);
     }
-    25% {
+    23% {
       transform: scale(${endSize}) rotate(-180deg);
     }
-    50% {
+    25% {
       border-color: ${endColor};
       transform: scale(${endSize}) rotate(-180deg);
     }
-    70% {
+    35% {
       border-color: ${startColor};
       transform: scale(${endSize}) rotate(0deg);
     }
-    75% {
+    38% {
+      transform: scale(${startSize}) rotate(0deg);
+    }
+    50% {
+      border-color: ${startColor};
       transform: scale(${startSize}) rotate(0deg);
     }
     100% {
@@ -76,23 +80,27 @@ const getIssueAnimation = p => keyframes`
     background: ${p.theme.red};
     color: ${p.theme.red};
   }
-  20% {
+  10% {
     background: ${p.theme.red};
     color: ${p.theme.red};
   }
-  30% {
+  15% {
     background: ${p.theme.green};
     color: ${p.theme.green};
   }
-  45% {
+  23% {
     background: ${p.theme.green};
     color: ${p.theme.green};
   }
-  70% {
+  35% {
     background: ${p.theme.red};
     color: ${p.theme.red};
   }
-  80% {
+  40% {
+    background: ${p.theme.green};
+    color: ${p.theme.green};
+  }
+  50% {
     background: ${p.theme.green};
     color: ${p.theme.green};
   }
@@ -118,7 +126,7 @@ const Avatars = styled('div')`
   width: 70px;
   height: 70px;
   position: relative;
-  animation: 5s ${rotation()} infinite;
+  animation: 10s ${rotation()} infinite;
 `;
 
 const StyledIssue = styled(Issue)`
@@ -127,7 +135,7 @@ const StyledIssue = styled(Issue)`
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 0.875em;
-  animation: 5s ${p => getIssueAnimation(p)} infinite;
+  animation: 10s ${p => getIssueAnimation(p)} infinite;
 `;
 
 const getTransforms = p => {
@@ -141,7 +149,7 @@ const getTransforms = p => {
 
 const StyledAvatar = styled(Avatar)`
   position: absolute;
-  animation: 5s ${rotation(-1)} infinite${p => (p.start || p.end) && `, 5s ${getAvatarAnimation(p)} infinite`};
+  animation: 10s ${rotation(-1)} infinite${p => (p.start || p.end) && `, 10s ${getAvatarAnimation(p)} infinite`};
   width: 70px;
   height: 70px;
 `;
