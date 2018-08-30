@@ -49,7 +49,7 @@ const TriangleUp = styled('div')`
   border-bottom: 0.5em solid ${p => p.theme.alert[p.priority || 'error'].background};
   position: absolute;
   left: 50%;
-  bottom: 100%;
+  bottom: 97%;
   transform: translateX(-50%);
 `;
 

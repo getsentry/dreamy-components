@@ -25,7 +25,7 @@ const makeAnimation = p => keyframes`
     background: ${p.startAsError && p.theme.red};
   }
   ${p.startAsError && `
-    10% {
+    15% {
       transform: scale(1.01);
     }
   `}
@@ -40,7 +40,7 @@ const StyledIssue = styled(Issue)`
   font-size: 0.875em;
   margin: 1em 0;
   width: 100%;
-  animation: 5s ${makeAnimation} infinite;
+  animation: 5s ${makeAnimation} ease-out infinite;
   transform: ${p => p.fadeOut && "translateY(-167%)"};
   opacity: ${p => p.fadeOut && 0};
 `;

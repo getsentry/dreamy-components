@@ -18,14 +18,16 @@ const Container = styled('div')`
   align-items: center;
   justify-content: center;
   border-radius: 100%;
-  background: ${p => p.priority ? p.theme.alert[p.priority].background : p.theme.gray1};
+  border: ${p => !p.borderless ? `4px solid ${p.theme.gray1}` : null};
   overflow: hidden;
 `;
 
 const ImageCropper = styled('div')`
-  width: ${p => p.borderless ? "100%" : "84%"};
-  height: ${p => p.borderless ? "100%" : "84%"};
-  border-radius: 50%;
+  width: ${p => p.borderless ? "100%" : "90%"};
+  height: ${p => p.borderless ? "100%" : "90%"};
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
   overflow: hidden;
 `;
 
