@@ -33,7 +33,7 @@ const StyledIssue = styled('div')`
 `;
 
 const Description = styled('span')`
-  color: ${p => p.theme.alert[p.priority || 'error'].backgroundLight};
+  color: #fff;
 `;
 
 const IssueName = styled('span')`
@@ -46,7 +46,7 @@ const TriangleUp = styled('div')`
   height: 0;
   border-left: 0.5em solid transparent;
   border-right: 0.5em solid transparent;
-  border-bottom: 0.5em solid ${p => p.theme.alert[p.priority || 'error'].background};
+  border-bottom: 0.5em solid currentColor;
   position: absolute;
   left: 50%;
   bottom: 97%;
@@ -70,6 +70,7 @@ const StyledIcon = styled(({priority, ...props}) => (priority == 'success') ? <I
   margin-left: 0.5em;
   ${p => p.animate && "transform: scale(0.5);"}
   ${p => p.animate && "opacity: 0;"}
+  path { fill: #fff; }
   animation: ${p => p.animate && `0.5s ${growOut} forwards`};
   animation-delay: ${p => p.animationDelay};
 `;

@@ -35,7 +35,7 @@ const rotation = (operator = 1) => keyframes`
   }
 `;
 
-const getAnimation = (p) => {
+const getAvatarAnimation = (p) => {
   const startColor = p.start ? p.theme.green : p.theme.gray1;
   const endColor = p.start ? p.theme.gray1 : p.theme.green;
   const startSize = p.start ? 1.1 : 1;
@@ -69,7 +69,38 @@ const getAnimation = (p) => {
       transform: scale(${startSize}) rotate(0deg);
     }
   `
-}
+};
+
+const getIssueAnimation = p => keyframes`
+  0% {
+    background: ${p.theme.red};
+    color: ${p.theme.red};
+  }
+  20% {
+    background: ${p.theme.red};
+    color: ${p.theme.red};
+  }
+  30% {
+    background: ${p.theme.green};
+    color: ${p.theme.green};
+  }
+  45% {
+    background: ${p.theme.green};
+    color: ${p.theme.green};
+  }
+  70% {
+    background: ${p.theme.red};
+    color: ${p.theme.red};
+  }
+  80% {
+    background: ${p.theme.green};
+    color: ${p.theme.green};
+  }
+  100% {
+    background: ${p.theme.green};
+    color: ${p.theme.green};
+  }
+`;
 
 const Container = styled('div')`
   width: 70px;
@@ -96,6 +127,7 @@ const StyledIssue = styled(Issue)`
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 0.875em;
+  animation: 5s ${p => getIssueAnimation(p)} infinite;
 `;
 
 const getTransforms = p => {
@@ -109,7 +141,7 @@ const getTransforms = p => {
 
 const StyledAvatar = styled(Avatar)`
   position: absolute;
-  animation: 5s ${rotation(-1)} infinite${p => (p.start || p.end) && `, 5s ${getAnimation(p)} infinite`};
+  animation: 5s ${rotation(-1)} infinite${p => (p.start || p.end) && `, 5s ${getAvatarAnimation(p)} infinite`};
   width: 70px;
   height: 70px;
 `;
