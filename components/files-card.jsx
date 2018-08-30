@@ -28,20 +28,6 @@ const FileCard = props => (
   </Card>
 )
 
-const expandOut = keyframes`
-  0% {
-    opacity: 0;
-    transform-origin: left center;
-    transform: scaleX(0.5);
-  }
-
-  100% {
-    opacity: 1;
-    transform-origin: left center;
-    transform: scaleX(1);
-  }
-`
-
 const LineContainer = styled('div')`
   border-bottom: ${p => !p.noDelimiter && `1px solid ${p.theme.purpleLightest}`};
   padding: 1.25em 1.5em 1.25em 1em;
