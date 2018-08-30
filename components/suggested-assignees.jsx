@@ -24,13 +24,13 @@ const rotation = (operator = 1) => keyframes`
   10% {
     transform: rotate(${180 * operator}deg);
   }
-  25% {
+  50% {
     transform: rotate(${180 * operator}deg);
   }
-  35% {
+  60% {
     transform: rotate(0deg);
   }
-  50% {
+  100% {
     transform: rotate(0deg);
   }
 `;
@@ -53,18 +53,15 @@ const getAvatarAnimation = (p) => {
     23% {
       transform: scale(${endSize}) rotate(-180deg);
     }
-    25% {
+    50% {
       border-color: ${endColor};
       transform: scale(${endSize}) rotate(-180deg);
     }
-    35% {
+    60% {
       border-color: ${startColor};
       transform: scale(${endSize}) rotate(0deg);
     }
-    38% {
-      transform: scale(${startSize}) rotate(0deg);
-    }
-    50% {
+    70% {
       border-color: ${startColor};
       transform: scale(${startSize}) rotate(0deg);
     }
@@ -88,19 +85,19 @@ const getIssueAnimation = p => keyframes`
     background: ${p.theme.green};
     color: ${p.theme.green};
   }
-  23% {
+  50% {
     background: ${p.theme.green};
     color: ${p.theme.green};
   }
-  35% {
+  51% {
     background: ${p.theme.red};
     color: ${p.theme.red};
   }
-  40% {
-    background: ${p.theme.green};
-    color: ${p.theme.green};
+  60% {
+    background: ${p.theme.red};
+    color: ${p.theme.red};
   }
-  50% {
+  65% {
     background: ${p.theme.green};
     color: ${p.theme.green};
   }
