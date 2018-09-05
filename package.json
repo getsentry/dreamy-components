@@ -46,14 +46,11 @@
   },
   "scripts": {
     "storybook": "start-storybook -p 6006",
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+    "precommit": "lint-staged"
   },
   "lint-staged": {
     "*.{js,jsx}": [
+      "eslint --fix",
       "prettier --write",
       "git add"
     ]
