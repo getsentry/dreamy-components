@@ -8,8 +8,8 @@ const CommitLine = ({children, ...props}) => {
       <div>{children}</div>
       <Line />
     </CommitLineContainer>
-  )
-}
+  );
+};
 
 const CommitLineContainer = styled('div')`
   display: grid;
@@ -23,7 +23,13 @@ const CommitLineContainer = styled('div')`
 
 const Line = styled('div')`
   height: 1px;
-  background-image: linear-gradient(90deg, ${p => p.theme.purple}, ${p => p.theme.purple} 50%, transparent 50%, transparent 100%);
+  background-image: linear-gradient(
+    90deg,
+    ${p => p.theme.purple},
+    ${p => p.theme.purple} 50%,
+    transparent 50%,
+    transparent 100%
+  );
   background-size: 3px 1px;
   border: none;
 `;

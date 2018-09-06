@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, {keyframes} from 'react-emotion';
+import styled from 'react-emotion';
 import Card from './card';
 import FileIconStack from './icon-file-stack';
 
@@ -12,21 +12,12 @@ const FileLine = ({filename, ...props}) => (
 
 const FileCard = props => (
   <Card {...props} priority="dark">
-    <FileLine
-      filename="api/endpoints/integrations.py"
-    />
-    <FileLine
-      filename="src/events.py"
-    />
-    <FileLine
-      filename="confs/server.py"
-    />
-    <FileLine
-      filename="js/urls.js"
-      noDelimiter={true}
-    />
+    <FileLine filename="api/endpoints/integrations.py" />
+    <FileLine filename="src/events.py" />
+    <FileLine filename="confs/server.py" />
+    <FileLine filename="js/urls.js" noDelimiter={true} />
   </Card>
-)
+);
 
 const LineContainer = styled('div')`
   border-bottom: ${p => !p.noDelimiter && `1px solid ${p.theme.purpleLightest}`};
@@ -41,6 +32,6 @@ const LineContainer = styled('div')`
 const FileIcon = styled(FileIconStack)`
   width: 1.5em;
   fill: ${p => p.theme.purpleLightest};
-`
+`;
 
 export default FileCard;

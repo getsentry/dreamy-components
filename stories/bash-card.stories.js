@@ -1,7 +1,6 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
+import {storiesOf} from '@storybook/react';
 
 import BashCard from '../components/bash-card';
 
-storiesOf('Bash Card', module)
-  .add('default', () => <BashCard style={{marginTop: "10%"}} />)
+storiesOf('Bash Card').add('default', () => <BashCard style={{marginTop: '10%'}} />);

@@ -3,15 +3,30 @@ import styled, {keyframes} from 'react-emotion';
 import Issue from './issue';
 import CommitLine from './commit-line';
 
-const IssuesCard = ({priority, ...props}) => (
+const IssuesCard = props => (
   <Container {...props}>
-    <StyledIssue fadeIn name="DoesNotExist" description="/api/0/projects/" priority="error" />
+    <StyledIssue
+      fadeIn
+      name="DoesNotExist"
+      description="/api/0/projects/"
+      priority="error"
+    />
     <StyledIssue name="DoesNotExist" description="/api/0/projects/" priority="error" />
     <CommitLine>9956ddd</CommitLine>
-    <StyledIssue startAsError name="DoesNotExist" description="/api/0/projects/" priority="success" />
-    <StyledIssue fadeOut name="DoesNotExist" description="/api/0/projects/" priority="success"/>
+    <StyledIssue
+      startAsError
+      name="DoesNotExist"
+      description="/api/0/projects/"
+      priority="success"
+    />
+    <StyledIssue
+      fadeOut
+      name="DoesNotExist"
+      description="/api/0/projects/"
+      priority="success"
+    />
   </Container>
-)
+);
 
 const Container = styled('div')`
   width: 500px;
@@ -21,10 +36,11 @@ const Container = styled('div')`
 const makeAnimation = p => keyframes`
   0% {
     ${(p.fadeIn || p.fadeOut) && `opacity: ${p.fadeIn ? 0 : 1}`};
-    ${!p.fadeOut && `transform: translateY(${p.startAsError ? "-200%" : "-167%"});`}
+    ${!p.fadeOut && `transform: translateY(${p.startAsError ? '-200%' : '-167%'});`}
     background: ${p.startAsError && p.theme.red};
   }
-  ${p.startAsError && `
+  ${p.startAsError &&
+    `
     15% {
       transform: scale(1.01);
     }
@@ -41,7 +57,7 @@ const StyledIssue = styled(Issue)`
   margin: 1em 0;
   width: 100%;
   animation: 5s ${makeAnimation} ease-out infinite;
-  transform: ${p => p.fadeOut && "translateY(-167%)"};
+  transform: ${p => p.fadeOut && 'translateY(-167%)'};
   opacity: ${p => p.fadeOut && 0};
 `;
 

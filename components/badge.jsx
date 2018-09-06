@@ -5,11 +5,11 @@ import Avatar from './avatar';
 const Badge = ({name, src, ...props}) => {
   return (
     <Container {...props}>
-      <StyledAvatar src={src} borderless={true}/>
+      <StyledAvatar src={src} borderless={true} />
       {name}
     </Container>
-  )
-}
+  );
+};
 
 const Container = styled('div')`
   display: flex;

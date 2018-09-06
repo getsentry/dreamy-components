@@ -3,7 +3,15 @@ import styled, {keyframes} from 'react-emotion';
 import IconCircleCheck from './icon-circle-check';
 import IconCircleExclamation from './icon-circle-exclamation';
 
-const Issue = ({priority, triangleUp, name, description, animate, animationDelay, ...props}) => {
+const Issue = ({
+  priority,
+  triangleUp,
+  name,
+  description,
+  animate,
+  animationDelay,
+  ...props
+}) => {
   return (
     <StyledIssue {...props} priority={priority}>
       <div>
@@ -13,8 +21,8 @@ const Issue = ({priority, triangleUp, name, description, animate, animationDelay
       <StyledIcon priority={priority} animate={animate} animationDelay={animationDelay} />
       {triangleUp && <TriangleUp priority={priority} />}
     </StyledIssue>
-  )
-}
+  );
+};
 
 const StyledIssue = styled('div')`
   display: inline-flex;
@@ -26,7 +34,7 @@ const StyledIssue = styled('div')`
   font-family: sans-serif;
   color: #fff;
   border-radius: 2em;
-  margin-top: ${p => p.triangleUp ? "0.5em" : null};
+  margin-top: ${p => (p.triangleUp ? '0.5em' : null)};
   position: relative;
   font-smooth: antialiased;
   -webkit-font-smoothing: antialiased;
@@ -64,13 +72,21 @@ const growOut = keyframes`
   }
 `;
 
-const StyledIcon = styled(({priority, ...props}) => (priority == 'success') ? <IconCircleCheck {...props} /> : <IconCircleExclamation  {...props} />)`
+const StyledIcon = styled(
+  ({priority, ...props}) =>
+    priority == 'success' ? (
+      <IconCircleCheck {...props} />
+    ) : (
+      <IconCircleExclamation {...props} />
+    )
+)`
   height: 2em;
   width: 2em;
   margin-left: 0.5em;
-  ${p => p.animate && "transform: scale(0.5);"}
-  ${p => p.animate && "opacity: 0;"}
-  path { fill: #fff; }
+  ${p => p.animate && 'transform: scale(0.5);'} ${p => p.animate && 'opacity: 0;'}
+  path {
+    fill: #fff;
+  }
   animation: ${p => p.animate && `0.5s ${growOut} forwards`};
   animation-delay: ${p => p.animationDelay};
 `;

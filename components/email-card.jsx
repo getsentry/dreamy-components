@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, {keyframes} from 'react-emotion';
+import styled from 'react-emotion';
 import Badge from './badge';
 import Card from './card';
 import IconMail from './icon-mail';
@@ -9,15 +9,18 @@ const LineItem = ({name, src, message, ...props}) => (
     <StyledBadge name={name} src={src} />
     <EmailMessage>{message}</EmailMessage>
   </LineContainer>
-)
+);
 
 const ContributorsCard = ({hash, ...props}) => (
-  <Card {...props} header={
-    <React.Fragment>
-      <StyledIconMail />
-      Version {hash} was deployed to production
-    </React.Fragment>
-  }>
+  <Card
+    {...props}
+    header={
+      <React.Fragment>
+        <StyledIconMail />
+        Version {hash} was deployed to production
+      </React.Fragment>
+    }
+  >
     <LineItem
       name="Ben"
       src="https://sentry.io/_assets/people/benvinegar-28a3febe24d6cdac0ea9d896e3c16570b1c7b31083f08fa5d54f46e8df0e2bda.jpg"
@@ -35,7 +38,7 @@ const ContributorsCard = ({hash, ...props}) => (
       noDelimiter={true}
     />
   </Card>
-)
+);
 
 const LineContainer = styled('div')`
   border-bottom: ${p => !p.noDelimiter && `1px solid ${p.theme.borderLight}`};

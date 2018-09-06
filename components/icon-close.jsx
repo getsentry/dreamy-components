@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const IconClose = props => (
   <svg {...props} viewBox="0 0 36 36">
