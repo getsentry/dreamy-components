@@ -2,6 +2,7 @@ import React from 'react';
 import styled, {keyframes} from 'react-emotion';
 import Avatar from './avatar';
 import Issue from './issue';
+import theme from './theme';
 
 const SuggestedAssignees = props => (
   <Container {...props}>
@@ -62,8 +63,8 @@ const rotation = (operator = 1) => keyframes`
 `;
 
 const getAvatarAnimation = p => {
-  const startColor = p.start ? p.theme.green : p.theme.gray1;
-  const endColor = p.start ? p.theme.gray1 : p.theme.green;
+  const startColor = p.start ? theme.green : theme.gray1;
+  const endColor = p.start ? theme.gray1 : theme.green;
   const startSize = p.start ? 1.1 : 1;
   const endSize = p.start ? 1 : 1.1;
 
@@ -98,38 +99,38 @@ const getAvatarAnimation = p => {
   `;
 };
 
-const getIssueAnimation = p => keyframes`
+const getIssueAnimation = () => keyframes`
   0% {
-    background: ${p.theme.red};
-    color: ${p.theme.red};
+    background: ${theme.red};
+    color: ${theme.red};
   }
   10% {
-    background: ${p.theme.red};
-    color: ${p.theme.red};
+    background: ${theme.red};
+    color: ${theme.red};
   }
   15% {
-    background: ${p.theme.green};
-    color: ${p.theme.green};
+    background: ${theme.green};
+    color: ${theme.green};
   }
   50% {
-    background: ${p.theme.green};
-    color: ${p.theme.green};
+    background: ${theme.green};
+    color: ${theme.green};
   }
   51% {
-    background: ${p.theme.red};
-    color: ${p.theme.red};
+    background: ${theme.red};
+    color: ${theme.red};
   }
   60% {
-    background: ${p.theme.red};
-    color: ${p.theme.red};
+    background: ${theme.red};
+    color: ${theme.red};
   }
   65% {
-    background: ${p.theme.green};
-    color: ${p.theme.green};
+    background: ${theme.green};
+    color: ${theme.green};
   }
   100% {
-    background: ${p.theme.green};
-    color: ${p.theme.green};
+    background: ${theme.green};
+    color: ${theme.green};
   }
 `;
 

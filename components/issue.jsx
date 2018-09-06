@@ -2,6 +2,7 @@ import React from 'react';
 import styled, {keyframes} from 'react-emotion';
 import IconCircleCheck from './icon-circle-check';
 import IconCircleExclamation from './icon-circle-exclamation';
+import theme from './theme';
 
 const Issue = ({
   priority,
@@ -29,7 +30,7 @@ const StyledIssue = styled('div')`
   align-items: center;
   justify-content: space-between;
   padding: 0.5em 0.5em 0.5em 1em;
-  background: ${p => p.theme.alert[p.priority || 'error'].background};
+  background: ${p => theme.alert[p.priority || 'error'].background};
   font-size: 1.2em;
   font-family: sans-serif;
   color: #fff;

@@ -2,6 +2,7 @@ import React from 'react';
 import styled, {keyframes} from 'react-emotion';
 import Issue from './issue';
 import CommitLine from './commit-line';
+import theme from './theme';
 
 const IssuesCard = props => (
   <Container {...props}>
@@ -29,15 +30,14 @@ const IssuesCard = props => (
 );
 
 const Container = styled('div')`
-  width: 500px;
-  margin: 0 auto;
+  max-width: 500px;
 `;
 
 const makeAnimation = p => keyframes`
   0% {
     ${(p.fadeIn || p.fadeOut) && `opacity: ${p.fadeIn ? 0 : 1}`};
     ${!p.fadeOut && `transform: translateY(${p.startAsError ? '-200%' : '-167%'});`}
-    background: ${p.startAsError && p.theme.red};
+    background: ${p.startAsError && theme.red};
   }
   ${p.startAsError &&
     `
@@ -48,7 +48,7 @@ const makeAnimation = p => keyframes`
   20% {
     ${(p.fadeIn || p.fadeOut) && `opacity: ${p.fadeIn ? 1 : 0}`};
     transform: translateY(0) scale(1);
-    background: ${p.startAsError && p.theme.green};
+    background: ${p.startAsError && theme.green};
   }
 `;
 

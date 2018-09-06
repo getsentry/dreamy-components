@@ -4,5 +4,5 @@ import {storiesOf} from '@storybook/react';
 import SuggestedAssignees from '../components/suggested-assignees';
 
 storiesOf('Suggested Assignees').add('default', () => (
-  <SuggestedAssignees style={{margin: '5%'}} />
+  <SuggestedAssignees style={{margin: '8% auto'}} />
 ));

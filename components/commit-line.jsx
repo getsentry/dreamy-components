@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'react-emotion';
+import theme from './theme';
 
 const CommitLine = ({children, ...props}) => {
   return (
@@ -16,7 +17,7 @@ const CommitLineContainer = styled('div')`
   grid-template-columns: 1fr auto 10%;
   grid-column-gap: 1em;
   align-items: center;
-  color: ${p => p.theme.purple};
+  color: ${theme.purple};
   font-family: sans-serif;
   font-size: 0.75em;
 `;
@@ -25,8 +26,8 @@ const Line = styled('div')`
   height: 1px;
   background-image: linear-gradient(
     90deg,
-    ${p => p.theme.purple},
-    ${p => p.theme.purple} 50%,
+    ${theme.purple},
+    ${theme.purple} 50%,
     transparent 50%,
     transparent 100%
   );

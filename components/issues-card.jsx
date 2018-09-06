@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'react-emotion';
 import Card from './card';
 import Issue from './issue';
+import theme from './theme';
 
 const IssuesCard = ({priority, ...props}) => (
   <Card
@@ -38,7 +39,7 @@ const StyledIssue = styled(Issue)`
   font-size: 0.875em;
   border-radius: 0;
   border-bottom: ${p =>
-    !p.noDelimiter && `1px solid ${p.theme.alert[p.priority || 'error'].border}`};
+    !p.noDelimiter && `1px solid ${theme.alert[p.priority || 'error'].border}`};
   padding: 1.25em 1.5em 1.25em 1em;
 `;
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'react-emotion';
+import theme from './theme';
 
 const Avatar = ({src, ...props}) => {
   return (
@@ -18,7 +19,7 @@ const Container = styled('div')`
   align-items: center;
   justify-content: center;
   border-radius: 100%;
-  border: ${p => (!p.borderless ? `3px solid ${p.theme.gray1}` : null)};
+  border: ${p => (!p.borderless ? `3px solid ${theme.gray1}` : null)};
   overflow: hidden;
 `;
 

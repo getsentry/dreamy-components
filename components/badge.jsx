@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'react-emotion';
 import Avatar from './avatar';
+import theme from './theme';
 
 const Badge = ({name, src, ...props}) => {
   return (
@@ -16,7 +17,7 @@ const Container = styled('div')`
   align-items: center;
   font-weight: 500;
   font-family: sans-serif;
-  color: ${p => p.theme.gray4};
+  color: ${theme.gray4};
 `;
 
 const StyledAvatar = styled(Avatar)`

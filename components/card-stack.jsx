@@ -42,8 +42,6 @@ const CardStack = ({children, verticalMultiplier, horizontalMultiplier, ...props
 const Container = styled('div')`
   position: relative;
   max-width: 500px;
-  margin: 0 auto;
-  top: 1em;
 `;
 
 const animate = p => keyframes`

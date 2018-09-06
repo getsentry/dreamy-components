@@ -3,6 +3,7 @@ import styled, {keyframes} from 'react-emotion';
 import Card from './card';
 import IconCircleChevron from './icon-circle-chevron';
 import IconClose from './icon-close';
+import theme from './theme';
 
 const BashCard = props => (
   <StyledCard
@@ -49,7 +50,7 @@ const blink = keyframes`
 `;
 
 const Cursor = styled('span')`
-  background-color: ${p => p.theme.blueLight};
+  background-color: ${theme.blueLight};
   display: inline-block;
   width: 2px;
   height: 1.2em;
@@ -65,11 +66,11 @@ const StyledCard = styled(Card)`
 `;
 
 const Green = styled('span')`
-  color: ${p => p.theme.green};
+  color: ${theme.green};
 `;
 
 const Orange = styled('span')`
-  color: ${p => p.theme.yellowOrange};
+  color: ${theme.yellowOrange};
 `;
 
 const BashContent = styled('p')`
@@ -81,12 +82,12 @@ const BashContent = styled('p')`
 
 const StyledIconCircleChevron = styled(IconCircleChevron)`
   height: 1.5em;
-  color: ${p => p.purpleLight};
+  color: ${theme.purpleLight};
   margin-right: 0.5em;
 `;
 
 const HeaderContent = styled('div')`
-  color: ${p => p.theme.purpleLightest};
+  color: ${theme.purpleLightest};
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -94,7 +95,7 @@ const HeaderContent = styled('div')`
 
 const StyledIconClose = styled(IconClose)`
   height: 1em;
-  fill: ${p => p.theme.purpleLightest};
+  fill: ${theme.purpleLightest};
 `;
 
 export default BashCard;

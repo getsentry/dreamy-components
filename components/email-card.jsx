@@ -3,6 +3,7 @@ import styled from 'react-emotion';
 import Badge from './badge';
 import Card from './card';
 import IconMail from './icon-mail';
+import theme from './theme';
 
 const LineItem = ({name, src, message, ...props}) => (
   <LineContainer {...props}>
@@ -41,7 +42,7 @@ const ContributorsCard = ({hash, ...props}) => (
 );
 
 const LineContainer = styled('div')`
-  border-bottom: ${p => !p.noDelimiter && `1px solid ${p.theme.borderLight}`};
+  border-bottom: ${p => !p.noDelimiter && `1px solid ${theme.borderLight}`};
   padding: 1.25em 1.5em 1.25em 1em;
   display: grid;
   grid-template-columns: auto 1fr;
@@ -52,11 +53,11 @@ const LineContainer = styled('div')`
 const StyledBadge = styled(Badge)`
   font-size: 0.875em;
   font-weight: 600;
-  color: ${p => p.theme.gray3};
+  color: ${theme.gray3};
 `;
 
 const EmailMessage = styled('span')`
-  color: ${p => p.theme.gray2};
+  color: ${theme.gray2};
   font-size: 0.875em;
 `;
 

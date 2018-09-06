@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'react-emotion';
 import Card from './card';
 import FileIconStack from './icon-file-stack';
+import theme from './theme';
 
 const FileLine = ({filename, ...props}) => (
   <LineContainer {...props}>
@@ -20,18 +21,18 @@ const FileCard = props => (
 );
 
 const LineContainer = styled('div')`
-  border-bottom: ${p => !p.noDelimiter && `1px solid ${p.theme.purpleLightest}`};
+  border-bottom: ${p => !p.noDelimiter && `1px solid ${theme.purpleLightest}`};
   padding: 1.25em 1.5em 1.25em 1em;
   display: grid;
   grid-template-columns: auto 1fr;
   grid-column-gap: 0.5em;
   align-items: center;
-  color: ${p => p.theme.purpleLightest};
+  color: ${theme.purpleLightest};
 `;
 
 const FileIcon = styled(FileIconStack)`
   width: 1.5em;
-  fill: ${p => p.theme.purpleLightest};
+  fill: ${theme.purpleLightest};
 `;
 
 export default FileCard;

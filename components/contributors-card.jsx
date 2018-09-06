@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, {keyframes} from 'react-emotion';
+import theme from './theme';
 import Badge from './badge';
 import Card from './card';
 
@@ -52,7 +53,7 @@ const expandOut = keyframes`
 `;
 
 const LineContainer = styled('div')`
-  border-bottom: ${p => !p.noDelimiter && `1px solid ${p.theme.borderLight}`};
+  border-bottom: ${p => !p.noDelimiter && `1px solid ${theme.borderLight}`};
   padding: 1.25em 1.5em 1.25em 1em;
   display: grid;
   grid-template-columns: auto 1fr 2em;
@@ -67,7 +68,7 @@ const StyledBadge = styled(Badge)`
 const LineChart = styled('div')`
   width: ${p => (p.score / 12) * 100}%;
   height: 6px;
-  background: ${p => p.theme.green};
+  background: ${theme.green};
   border-radius: 10px;
   animation: 0.5s ${expandOut};
 `;
@@ -76,7 +77,7 @@ const LineNumber = styled('div')`
   font-family: sans-serif;
   font-size: 0.875em;
   text-align: right;
-  color: ${p => p.theme.green};
+  color: ${theme.green};
 `;
 
 export default ContributorsCard;
