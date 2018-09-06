@@ -5,23 +5,30 @@ import IconCircleChevron from './icon-circle-chevron';
 import IconClose from './icon-close';
 
 const BashCard = props => (
-  <StyledCard {...props} priority="dark" header={(
-    <HeaderContent style={{width: "98%"}}>
-      <HeaderContent>
-        <StyledIconCircleChevron/> Chrissy — Vim
+  <StyledCard
+    {...props}
+    priority="dark"
+    header={
+      <HeaderContent style={{width: '98%'}}>
+        <HeaderContent>
+          <StyledIconCircleChevron /> Chrissy — Vim
+        </HeaderContent>
+        <StyledIconClose />
       </HeaderContent>
-      <StyledIconClose />
-    </HeaderContent>
-  )}>
+    }
+  >
     <BashContent>
-      <Green>Commit: Dc34EFrfs56Gs</Green><br/>
-      Author: Chrissy<br/>
-      Date: Wed Jul 18<br/>
-      ~<br/>
-      	fix: Don’t fail.<br/>
-      	<Orange>fixes SENTRY-5T4</Orange><Cursor /><br/>
-      ~<br/>
-      ~<br/>
+      <Green>Commit: Dc34EFrfs56Gs</Green>
+      <br />
+      Author: Chrissy
+      <br />
+      Date: Wed Jul 18
+      <br />~<br />
+      fix: Don’t fail.
+      <br />
+      <Orange>fixes SENTRY-5T4</Orange>
+      <Cursor />
+      <br />~<br />~<br />
     </BashContent>
   </StyledCard>
 );
@@ -49,10 +56,10 @@ const Cursor = styled('span')`
   position: relative;
   transform: translate(0.25em, 0.25em);
   animation: 1s ${blink} infinite;
-`
+`;
 
 const StyledCard = styled(Card)`
-  background: #2F2837;
+  background: #2f2837;
   width: 500px;
   margin: 0 auto;
 `;

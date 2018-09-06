@@ -81,7 +81,7 @@ const theme = {
       backgroundLight: '#E4B4B0',
       background: '#e03e2f',
       border: '#D0021B',
-    }
+    },
   },
 
   text: {

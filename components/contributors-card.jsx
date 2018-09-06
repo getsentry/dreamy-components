@@ -6,10 +6,10 @@ import Card from './card';
 const ContributorsLine = ({name, src, score, ...props}) => (
   <LineContainer {...props}>
     <StyledBadge name={name} src={src} />
-    <LineChart score={score}/>
+    <LineChart score={score} />
     <LineNumber>{score}</LineNumber>
   </LineContainer>
-)
+);
 
 const ContributorsCard = props => (
   <Card {...props}>
@@ -35,7 +35,7 @@ const ContributorsCard = props => (
       noDelimiter={true}
     />
   </Card>
-)
+);
 
 const expandOut = keyframes`
   0% {
@@ -49,7 +49,7 @@ const expandOut = keyframes`
     transform-origin: left center;
     transform: scaleX(1);
   }
-`
+`;
 
 const LineContainer = styled('div')`
   border-bottom: ${p => !p.noDelimiter && `1px solid ${p.theme.borderLight}`};
@@ -65,7 +65,7 @@ const StyledBadge = styled(Badge)`
 `;
 
 const LineChart = styled('div')`
-  width: ${p => p.score / 12 * 100}%;
+  width: ${p => (p.score / 12) * 100}%;
   height: 6px;
   background: ${p => p.theme.green};
   border-radius: 10px;
@@ -77,6 +77,6 @@ const LineNumber = styled('div')`
   font-size: 0.875em;
   text-align: right;
   color: ${p => p.theme.green};
-`
+`;
 
 export default ContributorsCard;
