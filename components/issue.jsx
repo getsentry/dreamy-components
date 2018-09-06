@@ -36,7 +36,6 @@ const StyledIssue = styled('div')`
   border-radius: 2em;
   margin-top: ${p => (p.triangleUp ? '0.5em' : null)};
   position: relative;
-  font-smooth: antialiased;
   -webkit-font-smoothing: antialiased;
 `;
 

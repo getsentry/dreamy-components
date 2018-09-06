@@ -25,8 +25,6 @@ const Container = styled('div')`
 const ImageCropper = styled('div')`
   width: ${p => (p.borderless ? '100%' : '90%')};
   height: ${p => (p.borderless ? '100%' : '90%')};
-  width: 100%;
-  height: 100%;
   border-radius: 100%;
   overflow: hidden;
 `;
