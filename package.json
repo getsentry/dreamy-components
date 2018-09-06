@@ -2,7 +2,7 @@
   "name": "sentry-dreamy-components",
   "version": "0.0.1",
   "description": "Cool Looking Components That Do Basically Nothing",
-  "main": "README.md",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": ""
