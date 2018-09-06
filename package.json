@@ -50,8 +50,10 @@
     "stylelint-processor-styled-components": "^1.3.0"
   },
   "scripts": {
+    "start": "start-storybook -p 6006",
     "storybook": "start-storybook -p 6006",
     "precommit": "lint-staged",
+    "static": "npx babel-node staticBuilder.js",
     "lint": "node_modules/.bin/eslint . --ext .js,.jsx",
     "lint:css": "stylelint components/*.jsx"
   },

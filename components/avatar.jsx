@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'react-emotion';
 
-const Avatar = ({src, borderless, ...props}) => {
+const Avatar = ({src, ...props}) => {
   return (
     <Container {...props}>
-      <ImageCropper borderless={borderless}>
+      <ImageCropper>
         <ImageFill src={src} />
       </ImageCropper>
     </Container>
@@ -12,19 +12,19 @@ const Avatar = ({src, borderless, ...props}) => {
 };
 
 const Container = styled('div')`
-  width: ${p => p.size || '100%'};
-  height: ${p => p.size || '100%'};
+  width: 100%;
+  height: 100%;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   border-radius: 100%;
-  border: ${p => (!p.borderless ? `4px solid ${p.theme.gray1}` : null)};
+  border: ${p => (!p.borderless ? `3px solid ${p.theme.gray1}` : null)};
   overflow: hidden;
 `;
 
 const ImageCropper = styled('div')`
-  width: ${p => (p.borderless ? '100%' : '90%')};
-  height: ${p => (p.borderless ? '100%' : '90%')};
+  width: 100%;
+  height: 100%;
   border-radius: 100%;
   overflow: hidden;
 `;
