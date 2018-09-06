@@ -15,7 +15,7 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             presets: ["env", "react"],
-            plugins: ["transform-object-rest-spread"]
+            plugins: ["babel-plugin-add-module-exports", "transform-es2015-modules-commonjs", "transform-object-rest-spread"]
           }
         }
       }

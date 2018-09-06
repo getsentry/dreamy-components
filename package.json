@@ -53,6 +53,7 @@
     "storybook": "start-storybook -p 6006",
     "precommit": "lint-staged",
     "static": "npx babel-node staticBuilder.js",
+    "dynamic": "npx babel components/*.js --out-dir dist",
     "lint": "node_modules/.bin/eslint . --ext .js,.jsx",
     "lint:css": "stylelint components/*.jsx"
   },
@@ -63,5 +64,8 @@
       "stylelint components/*.jsx",
       "git add"
     ]
+  },
+  "dependencies": {
+    "babel-preset-node-module": "^2.0.5"
   }
 }
