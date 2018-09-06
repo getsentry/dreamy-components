@@ -2,7 +2,7 @@
 
 ### Dreamy Components
 
-Sentry Dreamy Components are a series of stateless, functionless, and contextless pieces of styled jsx; they are designed 
+Sentry Dreamy Components are a series of stateless, purposeless, and contextless pieces of styled jsx; they are designed 
 to build product illustrations that are fun, active, and don't use a lot of bytes. Think of it like a more accessible svg.
 
 Because they are written in pure jsx, these components can also be rendered down to flat html without any side-effects. This
