@@ -5,13 +5,24 @@ import {ThemeProvider} from 'emotion-theming';
 import fs from 'fs';
 
 import Theme from './components/theme.jsx';
-import BashCard from './components/bash-card.jsx';
 
-const testHtml = renderStylesToString(
-  ReactDOM.renderToString(
-    <ThemeProvider theme={Theme}>
-      <BashCard />
-    </ThemeProvider>
-  )
-);
-fs.writeFileSync('./test.html', testHtml);
+const files = [
+  'bash-card',
+  'resolution',
+  'suggested-assignees',
+  'emails',
+  'issues',
+  'contributors',
+];
+
+files.forEach(file => {
+  const Component = require(`./components/${file}`);
+  const html = renderStylesToString(
+    ReactDOM.renderToString(
+      <ThemeProvider theme={Theme}>
+        <Component />
+      </ThemeProvider>
+    )
+  );
+  fs.writeFileSync(`./static_components/${file}.html`, html);
+});
