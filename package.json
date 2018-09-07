@@ -1,7 +1,7 @@
 {
   "name": "sentry-dreamy-components",
   "version": "0.0.1",
-  "description": "Cool Looking Components That Do Basically Nothing",
+  "description": "Sweet Looking Components That Do Basically Nothing",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -66,8 +66,5 @@
       "stylelint components/*.jsx",
       "git add"
     ]
-  },
-  "dependencies": {
-    "babel-preset-node-module": "^2.0.5"
   }
 }
