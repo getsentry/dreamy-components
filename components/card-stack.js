@@ -24,6 +24,7 @@ const CardStack = ({children, verticalMultiplier, horizontalMultiplier, ...props
       <Wrapper
         transformAmount={transformAmount}
         key={i}
+        inFlow={i == Math.ceil(length / 2)}
         verticalMultiplier={verticalMultiplier}
         horizontalMultiplier={horizontalMultiplier}
       >
@@ -32,12 +33,11 @@ const CardStack = ({children, verticalMultiplier, horizontalMultiplier, ...props
     );
   });
 
-  return (
-    <Container {...props} count={childrenAsArray.length}>
-      {stacked}
-    </Container>
-  );
+  return <Container {...props}>{stacked}</Container>;
 };
+
+const horizontalOffset = p => (p.transformAmount / 25) * (p.horizontalMultiplier || 1);
+const verticalOffset = p => (p.transformAmount / 10) * (p.verticalMultiplier || 1);
 
 const Container = styled('div')`
   position: relative;
@@ -51,20 +51,20 @@ const animate = p => keyframes`
   }
   100% {
     transform-origin: center center;
-    transform: translate(${(p.transformAmount / 25) *
-      (p.horizontalMultiplier || 1)}%, ${(p.transformAmount / 10) *
-  (p.verticalMultiplier || 1)}%);
+    transform: translate(
+      ${horizontalOffset(p)}%,
+      ${verticalOffset(p)}%
+    );
   }
 `;
 
 const Wrapper = styled('div')`
   animation: 0.7s ${animate};
-  position: absolute;
+  position: ${p => (p.inFlow ? 'relative' : 'absolute')};
   width: 100%;
-  transform: translate(
-    ${p => (p.transformAmount / 25) * (p.horizontalMultiplier || 1)}%,
-    ${p => (p.transformAmount / 10) * (p.verticalMultiplier || 1)}%
-  );
+  top: 0;
+  left: 0;
+  transform: translate(${p => horizontalOffset(p)}%, ${p => verticalOffset(p)}%);
 `;
 
 export default CardStack;
