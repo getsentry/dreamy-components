@@ -1,16 +1,16 @@
 {
   "name": "sentry-dreamy-components",
   "version": "0.0.1",
-  "description": "Sweet Looking Components That Do Basically Nothing",
+  "description": "Totally Sweet Looking Components That Do Absolutely Nothing",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "getsentry/dreamy-components"
   },
   "keywords": [
     "web",
-    "framework",
-    "icons"
+    "illustrations",
+    "components"
   ],
   "author": "Chrissy <christopherchristopherclark@gmail.com>",
   "license": "SIL OFL 1.1",
