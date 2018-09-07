@@ -4,11 +4,9 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
 var _templateObject = _taggedTemplateLiteral(['\n  position: relative;\n  max-width: 500px;\n'], ['\n  position: relative;\n  max-width: 500px;\n']),
-    _templateObject2 = _taggedTemplateLiteral(['\n  0% {\n    transform-origin: center center;\n    transform: translate(0%, 0%);\n  }\n  100% {\n    transform-origin: center center;\n    transform: translate(', '%, ', '%);\n  }\n'], ['\n  0% {\n    transform-origin: center center;\n    transform: translate(0%, 0%);\n  }\n  100% {\n    transform-origin: center center;\n    transform: translate(', '%, ', '%);\n  }\n']),
-    _templateObject3 = _taggedTemplateLiteral(['\n  animation: 0.7s ', ';\n  position: absolute;\n  width: 100%;\n  transform: translate(\n    ', '%,\n    ', '%\n  );\n'], ['\n  animation: 0.7s ', ';\n  position: absolute;\n  width: 100%;\n  transform: translate(\n    ', '%,\n    ', '%\n  );\n']);
+    _templateObject2 = _taggedTemplateLiteral(['\n  0% {\n    transform-origin: center center;\n    transform: translate(0%, 0%);\n  }\n  100% {\n    transform-origin: center center;\n    transform: translate(\n      ', '%,\n      ', '%\n    );\n  }\n'], ['\n  0% {\n    transform-origin: center center;\n    transform: translate(0%, 0%);\n  }\n  100% {\n    transform-origin: center center;\n    transform: translate(\n      ', '%,\n      ', '%\n    );\n  }\n']),
+    _templateObject3 = _taggedTemplateLiteral(['\n  animation: 0.7s ', ';\n  position: ', ';\n  width: 100%;\n  top: 0;\n  left: 0;\n  transform: translate(', '%, ', '%);\n'], ['\n  animation: 0.7s ', ';\n  position: ', ';\n  width: 100%;\n  top: 0;\n  left: 0;\n  transform: translate(', '%, ', '%);\n']);
 
 var _react = require('react');
 
@@ -53,6 +51,7 @@ var CardStack = function CardStack(_ref) {
       {
         transformAmount: transformAmount,
         key: i,
+        inFlow: i == Math.ceil(length / 2),
         verticalMultiplier: verticalMultiplier,
         horizontalMultiplier: horizontalMultiplier
       },
@@ -62,21 +61,30 @@ var CardStack = function CardStack(_ref) {
 
   return _react2.default.createElement(
     Container,
-    _extends({}, props, { count: childrenAsArray.length }),
+    props,
     stacked
   );
+};
+
+var horizontalOffset = function horizontalOffset(p) {
+  return p.transformAmount / 25 * (p.horizontalMultiplier || 1);
+};
+var verticalOffset = function verticalOffset(p) {
+  return p.transformAmount / 10 * (p.verticalMultiplier || 1);
 };
 
 var Container = (0, _reactEmotion2.default)('div')(_templateObject);
 
 var animate = function animate(p) {
-  return (0, _reactEmotion.keyframes)(_templateObject2, p.transformAmount / 25 * (p.horizontalMultiplier || 1), p.transformAmount / 10 * (p.verticalMultiplier || 1));
+  return (0, _reactEmotion.keyframes)(_templateObject2, horizontalOffset(p), verticalOffset(p));
 };
 
 var Wrapper = (0, _reactEmotion2.default)('div')(_templateObject3, animate, function (p) {
-  return p.transformAmount / 25 * (p.horizontalMultiplier || 1);
+  return p.inFlow ? 'relative' : 'absolute';
 }, function (p) {
-  return p.transformAmount / 10 * (p.verticalMultiplier || 1);
+  return horizontalOffset(p);
+}, function (p) {
+  return verticalOffset(p);
 });
 
 exports.default = CardStack;
