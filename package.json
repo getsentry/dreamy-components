@@ -18,6 +18,10 @@
     "url": "https://github.com/getsentry/dreamy-components/issues"
   },
   "homepage": "https://github.com/getsentry/dreamy-components",
+  "dependencies": {
+    "react": "16.3.2",
+    "react-emotion": "9.1.2"
+  },
   "devDependencies": {
     "@storybook/addon-actions": "^3.4.8",
     "@storybook/addon-links": "^3.4.8",
@@ -40,9 +44,7 @@
     "husky": "^0.14.3",
     "lint-staged": "^7.2.2",
     "prettier": "^1.14.1",
-    "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "react-emotion": "^9.2.6",
     "stylelint": "^9.5.0",
     "stylelint-config-recommended": "^2.1.0",
     "stylelint-config-styled-components": "^0.1.1",
