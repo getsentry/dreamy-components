@@ -9,3 +9,28 @@ Because they are written in pure jsx, these components can also be rendered down
 makes them easy to import and use in static sites. You can find the static files in the `static_components` directory.
 
 Development is done using storybook which boots up on `npm start`. To regenerate static files, run `npm run static`.
+
+
+### Setup
+
+In the console:
+
+```
+yarn add getsentry/dreamy-components
+```
+
+and in your file:
+
+```jsx
+import {BashCard} from 'sentry-dreamy-components';
+import styled from 'react-emotion';
+
+const StyledBashCard = styled(BashCard)`
+  width: 500px; // components have a flexible width
+  font-size: 1.5em;  // components use ems and can be scaled up and down
+`;
+
+export default StyledBashCard;
+```
+
+
