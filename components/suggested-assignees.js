@@ -137,7 +137,7 @@ const getIssueAnimation = () => keyframes`
 const Container = styled('div')`
   width: 70px;
   height: 70px;
-  padding: ${70 * 1.5}px;
+  margin: ${70 * 1.5}px;
   position: relative;
   transform-origin: center center;
   display: flex;
