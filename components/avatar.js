@@ -6,7 +6,7 @@ const Avatar = ({src, ...props}) => {
   return (
     <Container {...props}>
       <ImageCropper>
-        <ImageFill src={src} />
+        <ImageFill src={src} alt="avatar" />
       </ImageCropper>
     </Container>
   );
