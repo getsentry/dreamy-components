@@ -64,6 +64,7 @@
       "eslint --fix",
       "prettier --write",
       "stylelint components/*.jsx",
+      "npm run static",
       "git add"
     ]
   }
