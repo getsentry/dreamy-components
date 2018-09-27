@@ -5,7 +5,7 @@ module.exports.SuggestedAssignees = require('./dist/components/suggested-assigne
 module.exports.Resolution = require('./dist/components/resolution');
 module.exports.Emails = require('./dist/components/emails');
 module.exports.Contributors = require('./dist/components/contributors');
-module.exports.Contributors = require('./dist/components/minified');
+module.exports.Minified = require('./dist/components/minified');
 
 // cards
 
