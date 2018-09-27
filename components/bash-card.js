@@ -64,7 +64,6 @@ const Cursor = styled('span')`
 
 const StyledCard = styled(Card)`
   background: #2f2837;
-  width: 500px;
   margin: 0 auto;
 `;
 
