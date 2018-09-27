@@ -10,6 +10,7 @@ const files = [
   'emails',
   'issues',
   'contributors',
+  'minified'
 ];
 
 files.forEach(file => {

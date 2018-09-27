@@ -18,7 +18,7 @@ const ContributorsCard = ({hash, ...props}) => (
     header={
       <React.Fragment>
         <StyledIconMail />
-        Version {hash} was deployed to production
+        New Release! Version {hash} was deployed
       </React.Fragment>
     }
   >

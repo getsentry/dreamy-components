@@ -5,32 +5,35 @@ import IconCircleChevron from './icon-circle-chevron';
 import IconClose from './icon-close';
 import theme from './theme';
 
-const BashCard = props => (
+const BashCard = ({children, header, ...props}) => (
   <StyledCard
     {...props}
     priority="dark"
     header={
       <HeaderContent style={{width: '98%'}}>
         <HeaderContent>
-          <StyledIconCircleChevron /> Chrissy — Vim
+          <StyledIconCircleChevron />
+          {header || 'Chrissy — Vim'}
         </HeaderContent>
         <StyledIconClose />
       </HeaderContent>
     }
   >
-    <BashContent>
-      <Green>Commit: Dc34EFrfs56Gs</Green>
-      <br />
-      Author: Chrissy
-      <br />
-      Date: Wed Jul 18
-      <br />~<br />
-      fix: Don’t fail.
-      <br />
-      <Orange>fixes SENTRY-5T4</Orange>
-      <Cursor />
-      <br />~<br />~<br />
-    </BashContent>
+    {children || (
+      <BashContent>
+        <Green>Commit: Dc34EFrfs56Gs</Green>
+        <br />
+        Author: Chrissy
+        <br />
+        Date: Wed Jul 18
+        <br />~<br />
+        fix: Don’t fail.
+        <br />
+        <Orange>fixes SENTRY-5T4</Orange>
+        <Cursor />
+        <br />~<br />~<br />
+      </BashContent>
+    )}
   </StyledCard>
 );
 
