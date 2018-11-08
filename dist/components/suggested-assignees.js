@@ -4,15 +4,6 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _templateObject = _taggedTemplateLiteral(['\n  0% {\n    transform: rotate(0deg);\n  }\n  10% {\n    transform: rotate(', 'deg);\n  }\n  50% {\n    transform: rotate(', 'deg);\n  }\n  60% {\n    transform: rotate(0deg);\n  }\n  100% {\n    transform: rotate(0deg);\n  }\n'], ['\n  0% {\n    transform: rotate(0deg);\n  }\n  10% {\n    transform: rotate(', 'deg);\n  }\n  50% {\n    transform: rotate(', 'deg);\n  }\n  60% {\n    transform: rotate(0deg);\n  }\n  100% {\n    transform: rotate(0deg);\n  }\n']),
-    _templateObject2 = _taggedTemplateLiteral(['\n    0% {\n      border-color: ', ';\n      transform: scale(', ') rotate(0deg);\n    }\n    10% {\n      border-color: ', ';\n      transform: scale(', ') rotate(-180deg);\n    }\n    23% {\n      transform: scale(', ') rotate(-180deg);\n    }\n    50% {\n      border-color: ', ';\n      transform: scale(', ') rotate(-180deg);\n    }\n    60% {\n      border-color: ', ';\n      transform: scale(', ') rotate(0deg);\n    }\n    70% {\n      border-color: ', ';\n      transform: scale(', ') rotate(0deg);\n    }\n    100% {\n      border-color: ', ';\n      transform: scale(', ') rotate(0deg);\n    }\n  '], ['\n    0% {\n      border-color: ', ';\n      transform: scale(', ') rotate(0deg);\n    }\n    10% {\n      border-color: ', ';\n      transform: scale(', ') rotate(-180deg);\n    }\n    23% {\n      transform: scale(', ') rotate(-180deg);\n    }\n    50% {\n      border-color: ', ';\n      transform: scale(', ') rotate(-180deg);\n    }\n    60% {\n      border-color: ', ';\n      transform: scale(', ') rotate(0deg);\n    }\n    70% {\n      border-color: ', ';\n      transform: scale(', ') rotate(0deg);\n    }\n    100% {\n      border-color: ', ';\n      transform: scale(', ') rotate(0deg);\n    }\n  ']),
-    _templateObject3 = _taggedTemplateLiteral(['\n  0% {\n    background: ', ';\n    color: ', ';\n  }\n  10% {\n    background: ', ';\n    color: ', ';\n  }\n  15% {\n    background: ', ';\n    color: ', ';\n  }\n  50% {\n    background: ', ';\n    color: ', ';\n  }\n  51% {\n    background: ', ';\n    color: ', ';\n  }\n  60% {\n    background: ', ';\n    color: ', ';\n  }\n  65% {\n    background: ', ';\n    color: ', ';\n  }\n  100% {\n    background: ', ';\n    color: ', ';\n  }\n'], ['\n  0% {\n    background: ', ';\n    color: ', ';\n  }\n  10% {\n    background: ', ';\n    color: ', ';\n  }\n  15% {\n    background: ', ';\n    color: ', ';\n  }\n  50% {\n    background: ', ';\n    color: ', ';\n  }\n  51% {\n    background: ', ';\n    color: ', ';\n  }\n  60% {\n    background: ', ';\n    color: ', ';\n  }\n  65% {\n    background: ', ';\n    color: ', ';\n  }\n  100% {\n    background: ', ';\n    color: ', ';\n  }\n']),
-    _templateObject4 = _taggedTemplateLiteral(['\n  width: 70px;\n  height: 70px;\n  padding: ', 'px;\n  position: relative;\n  transform-origin: center center;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n'], ['\n  width: 70px;\n  height: 70px;\n  padding: ', 'px;\n  position: relative;\n  transform-origin: center center;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n']),
-    _templateObject5 = _taggedTemplateLiteral(['\n  width: 70px;\n  height: 70px;\n  position: relative;\n  animation: 10s ', ' infinite;\n'], ['\n  width: 70px;\n  height: 70px;\n  position: relative;\n  animation: 10s ', ' infinite;\n']),
-    _templateObject6 = _taggedTemplateLiteral(['\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  font-size: 0.875em;\n  animation: 10s ', ' infinite;\n'], ['\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  font-size: 0.875em;\n  animation: 10s ', ' infinite;\n']),
-    _templateObject7 = _taggedTemplateLiteral(['\n  position: absolute;\n  animation: 10s ', ' infinite\n    ', ';\n  width: 70px;\n  height: 70px;\n'], ['\n  position: absolute;\n  animation: 10s ', ' infinite\n    ', ';\n  width: 70px;\n  height: 70px;\n']),
-    _templateObject8 = _taggedTemplateLiteral(['\n  transform: translate(', ');\n  width: 70px;\n  height: 70px;\n  position: absolute;\n'], ['\n  transform: translate(', ');\n  width: 70px;\n  height: 70px;\n  position: absolute;\n']);
-
 var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
@@ -36,8 +27,6 @@ var _theme2 = _interopRequireDefault(_theme);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
-
-function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 var SuggestedAssignees = function SuggestedAssignees(props) {
   return _react2.default.createElement(
@@ -85,7 +74,8 @@ var SuggestedAssignees = function SuggestedAssignees(props) {
 
 var rotation = function rotation() {
   var operator = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
-  return (0, _reactEmotion.keyframes)(_templateObject, 180 * operator, 180 * operator);
+  return (/*#__PURE__*/(0, _reactEmotion.keyframes)('0%{transform:rotate(0deg);}10%{transform:rotate(', 180 * operator, 'deg);}50%{transform:rotate(', 180 * operator, 'deg);}60%{transform:rotate(0deg);}100%{transform:rotate(0deg);}label:rotation;')
+  );
 };
 
 var getAvatarAnimation = function getAvatarAnimation(p) {
@@ -94,20 +84,31 @@ var getAvatarAnimation = function getAvatarAnimation(p) {
   var startSize = p.start ? 1.1 : 1;
   var endSize = p.start ? 1 : 1.1;
 
-  return (0, _reactEmotion.keyframes)(_templateObject2, startColor, startSize, endColor, startSize, endSize, endColor, endSize, startColor, endSize, startColor, startSize, startColor, startSize);
+  return (/*#__PURE__*/(0, _reactEmotion.keyframes)('0%{border-color:', startColor, ';transform:scale(', startSize, ') rotate(0deg);}10%{border-color:', endColor, ';transform:scale(', startSize, ') rotate(-180deg);}23%{transform:scale(', endSize, ') rotate(-180deg);}50%{border-color:', endColor, ';transform:scale(', endSize, ') rotate(-180deg);}60%{border-color:', startColor, ';transform:scale(', endSize, ') rotate(0deg);}70%{border-color:', startColor, ';transform:scale(', startSize, ') rotate(0deg);}100%{border-color:', startColor, ';transform:scale(', startSize, ') rotate(0deg);}label:getAvatarAnimation;')
+  );
 };
 
 var getIssueAnimation = function getIssueAnimation() {
-  return (0, _reactEmotion.keyframes)(_templateObject3, _theme2.default.red, _theme2.default.red, _theme2.default.red, _theme2.default.red, _theme2.default.green, _theme2.default.green, _theme2.default.green, _theme2.default.green, _theme2.default.red, _theme2.default.red, _theme2.default.red, _theme2.default.red, _theme2.default.green, _theme2.default.green, _theme2.default.green, _theme2.default.green);
+  return (/*#__PURE__*/(0, _reactEmotion.keyframes)('0%{background:', _theme2.default.red, ';color:', _theme2.default.red, ';}10%{background:', _theme2.default.red, ';color:', _theme2.default.red, ';}15%{background:', _theme2.default.green, ';color:', _theme2.default.green, ';}50%{background:', _theme2.default.green, ';color:', _theme2.default.green, ';}51%{background:', _theme2.default.red, ';color:', _theme2.default.red, ';}60%{background:', _theme2.default.red, ';color:', _theme2.default.red, ';}65%{background:', _theme2.default.green, ';color:', _theme2.default.green, ';}100%{background:', _theme2.default.green, ';color:', _theme2.default.green, ';}label:getIssueAnimation;')
+  );
 };
 
-var Container = (0, _reactEmotion2.default)('div')(_templateObject4, 70 * 1.5);
+var Container = /*#__PURE__*/(0, _reactEmotion2.default)('div', {
+  label: 'Container',
+  target: 'e1hcexhs0'
+})('margin:9em;position:relative;transform-origin:center center;display:flex;align-items:center;justify-content:center;');
 
-var Avatars = (0, _reactEmotion2.default)('div')(_templateObject5, rotation());
+var Avatars = /*#__PURE__*/(0, _reactEmotion2.default)('div', {
+  label: 'Avatars',
+  target: 'e1hcexhs1'
+})('width:70px;height:70px;position:relative;animation:10s ', rotation(), ' infinite;');
 
-var StyledIssue = (0, _reactEmotion2.default)(_issue2.default)(_templateObject6, function (p) {
+var StyledIssue = /*#__PURE__*/(0, _reactEmotion2.default)(_issue2.default, {
+  label: 'StyledIssue',
+  target: 'e1hcexhs2'
+})('position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:0.875em;animation:10s ', function (p) {
   return getIssueAnimation(p);
-});
+}, ' infinite;');
 
 var getTransforms = function getTransforms(p) {
   if (p.bottom && p.middle) return '0, -150%';
@@ -118,22 +119,32 @@ var getTransforms = function getTransforms(p) {
   if (p.bottom && p.left) return '150%, -75%';
 };
 
-var StyledAvatar = (0, _reactEmotion2.default)(_avatar2.default)(_templateObject7, rotation(-1), function (p) {
-  return (p.start || p.end) && ', 10s ' + getAvatarAnimation(p) + ' infinite';
-});
-
-var AvatarWrapper = (0, _reactEmotion2.default)('div')(_templateObject8, getTransforms);
-
-var AvatarPackage = function AvatarPackage(_ref) {
+var StyledAvatar = /*#__PURE__*/(0, _reactEmotion2.default)(function (_ref) {
   var src = _ref.src,
-      start = _ref.start,
-      end = _ref.end,
-      props = _objectWithoutProperties(_ref, ['src', 'start', 'end']);
+      className = _ref.className;
+  return _react2.default.createElement(_avatar2.default, { className: className, src: src });
+}, {
+  label: 'StyledAvatar',
+  target: 'e1hcexhs3'
+})('position:absolute;animation:10s ', rotation(-1), ' infinite ', function (p) {
+  return (p.start || p.end) && ', 10s ' + getAvatarAnimation(p) + ' infinite';
+}, ';width:70px;height:70px;');
+
+var AvatarWrapper = /*#__PURE__*/(0, _reactEmotion2.default)('div', {
+  label: 'AvatarWrapper',
+  target: 'e1hcexhs4'
+})('transform:translate(', getTransforms, ');width:70px;height:70px;position:absolute;');
+
+var AvatarPackage = function AvatarPackage(_ref2) {
+  var src = _ref2.src,
+      start = _ref2.start,
+      end = _ref2.end,
+      props = _objectWithoutProperties(_ref2, ['src', 'start', 'end']);
 
   return _react2.default.createElement(
     AvatarWrapper,
     props,
-    _react2.default.createElement(StyledAvatar, { start: start, end: end, src: src })
+    _react2.default.createElement(StyledAvatar, { src: src, start: start, end: end })
   );
 };
 

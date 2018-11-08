@@ -23,7 +23,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Emails = function Emails(props) {
   return _react2.default.createElement(
     _cardStack2.default,
-    _extends({ horizontalMultiplier: 2.5 }, props),
+    _extends({ verticalMultiplier: 1.5 }, props),
     _react2.default.createElement(_emailCard2.default, { hash: '7cd0912' }),
     _react2.default.createElement(_emailCard2.default, { hash: '3ab7615', alternateHeaderColor: 'purpleLightest' }),
     _react2.default.createElement(_emailCard2.default, { hash: '2dc1209', alternateHeaderColor: 'purpleDarkest' })
