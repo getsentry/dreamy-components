@@ -14,22 +14,22 @@ const IssuesCard = ({priority, ...props}) => (
       name="ResponseError"
       description="/api/0/projects/"
       priority={priority}
-      animate={true}
+      shouldAnimate={true}
     />
     <StyledIssue
       name="DataError"
       description="/extensions/github/web/"
       priority={priority}
-      animate={true}
-      animationDelay="0.15s"
+      shouldAnimate={true}
+      delay="0.15s"
     />
     <StyledIssue
       name="ValueTooLarge"
       description="/api/{project_id}/store/"
       priority={priority}
-      animate={true}
+      shouldAnimate={true}
       noDelimiter={true}
-      animationDelay="0.3s"
+      delay="0.3s"
     />
   </Card>
 );
