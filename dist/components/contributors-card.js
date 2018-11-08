@@ -4,12 +4,6 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _templateObject = _taggedTemplateLiteral(['\n  0% {\n    opacity: 0;\n    transform-origin: left center;\n    transform: scaleX(0.5);\n  }\n\n  100% {\n    opacity: 1;\n    transform-origin: left center;\n    transform: scaleX(1);\n  }\n'], ['\n  0% {\n    opacity: 0;\n    transform-origin: left center;\n    transform: scaleX(0.5);\n  }\n\n  100% {\n    opacity: 1;\n    transform-origin: left center;\n    transform: scaleX(1);\n  }\n']),
-    _templateObject2 = _taggedTemplateLiteral(['\n  border-bottom: ', ';\n  padding: 1.25em 1.5em 1.25em 1em;\n  display: grid;\n  grid-template-columns: auto 1fr 2em;\n  grid-column-gap: 1em;\n  align-items: center;\n'], ['\n  border-bottom: ', ';\n  padding: 1.25em 1.5em 1.25em 1em;\n  display: grid;\n  grid-template-columns: auto 1fr 2em;\n  grid-column-gap: 1em;\n  align-items: center;\n']),
-    _templateObject3 = _taggedTemplateLiteral(['\n  font-size: 0.875em;\n'], ['\n  font-size: 0.875em;\n']),
-    _templateObject4 = _taggedTemplateLiteral(['\n  width: ', '%;\n  height: 6px;\n  background: ', ';\n  border-radius: 10px;\n  animation: 0.5s ', ';\n'], ['\n  width: ', '%;\n  height: 6px;\n  background: ', ';\n  border-radius: 10px;\n  animation: 0.5s ', ';\n']),
-    _templateObject5 = _taggedTemplateLiteral(['\n  font-family: sans-serif;\n  font-size: 0.875em;\n  text-align: right;\n  color: ', ';\n'], ['\n  font-family: sans-serif;\n  font-size: 0.875em;\n  text-align: right;\n  color: ', ';\n']);
-
 var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
@@ -31,8 +25,6 @@ var _card = require('./card');
 var _card2 = _interopRequireDefault(_card);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
@@ -83,19 +75,31 @@ var ContributorsCard = function ContributorsCard(props) {
   );
 };
 
-var expandOut = (0, _reactEmotion.keyframes)(_templateObject);
+var expandOut = /*#__PURE__*/(0, _reactEmotion.keyframes)('0%{opacity:0;transform-origin:left center;transform:scaleX(0.5);}100%{opacity:1;transform-origin:left center;transform:scaleX(1);}label:expandOut;');
 
-var LineContainer = (0, _reactEmotion2.default)('div')(_templateObject2, function (p) {
+var LineContainer = /*#__PURE__*/(0, _reactEmotion2.default)('div', {
+  label: 'LineContainer',
+  target: 'e1diby6x0'
+})('border-bottom:', function (p) {
   return !p.noDelimiter && '1px solid ' + _theme2.default.borderLight;
-});
+}, ';padding:1.25em 1.5em 1.25em 1em;display:grid;grid-template-columns:auto 1fr 2em;grid-column-gap:1em;align-items:center;');
 
-var StyledBadge = (0, _reactEmotion2.default)(_badge2.default)(_templateObject3);
+var StyledBadge = /*#__PURE__*/(0, _reactEmotion2.default)(_badge2.default, {
+  label: 'StyledBadge',
+  target: 'e1diby6x1'
+})('font-size:0.875em;');
 
-var LineChart = (0, _reactEmotion2.default)('div')(_templateObject4, function (p) {
+var LineChart = /*#__PURE__*/(0, _reactEmotion2.default)('div', {
+  label: 'LineChart',
+  target: 'e1diby6x2'
+})('width:', function (p) {
   return p.score / 12 * 100;
-}, _theme2.default.green, expandOut);
+}, '%;height:6px;background:', _theme2.default.green, ';border-radius:10px;animation:0.5s ', expandOut, ';');
 
-var LineNumber = (0, _reactEmotion2.default)('div')(_templateObject5, _theme2.default.green);
+var LineNumber = /*#__PURE__*/(0, _reactEmotion2.default)('div', {
+  label: 'LineNumber',
+  target: 'e1diby6x3'
+})('font-family:sans-serif;font-size:0.875em;text-align:right;color:', _theme2.default.green, ';');
 
 exports.default = ContributorsCard;
 module.exports = exports['default'];

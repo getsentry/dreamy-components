@@ -4,10 +4,6 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _templateObject = _taggedTemplateLiteral(['\n  position: relative;\n  max-width: 500px;\n'], ['\n  position: relative;\n  max-width: 500px;\n']),
-    _templateObject2 = _taggedTemplateLiteral(['\n  0% {\n    transform-origin: center center;\n    transform: translate(0%, 0%);\n  }\n  100% {\n    transform-origin: center center;\n    transform: translate(\n      ', '%,\n      ', '%\n    );\n  }\n'], ['\n  0% {\n    transform-origin: center center;\n    transform: translate(0%, 0%);\n  }\n  100% {\n    transform-origin: center center;\n    transform: translate(\n      ', '%,\n      ', '%\n    );\n  }\n']),
-    _templateObject3 = _taggedTemplateLiteral(['\n  animation: 0.7s ', ';\n  position: ', ';\n  width: 100%;\n  top: 0;\n  left: 0;\n  transform: translate(', '%, ', '%);\n'], ['\n  animation: 0.7s ', ';\n  position: ', ';\n  width: 100%;\n  top: 0;\n  left: 0;\n  transform: translate(', '%, ', '%);\n']);
-
 var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
@@ -17,8 +13,6 @@ var _reactEmotion = require('react-emotion');
 var _reactEmotion2 = _interopRequireDefault(_reactEmotion);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
@@ -73,19 +67,26 @@ var verticalOffset = function verticalOffset(p) {
   return p.transformAmount / 10 * (p.verticalMultiplier || 1);
 };
 
-var Container = (0, _reactEmotion2.default)('div')(_templateObject);
+var Container = /*#__PURE__*/(0, _reactEmotion2.default)('div', {
+  label: 'Container',
+  target: 'ejplyi40'
+})('position:relative;max-width:500px;');
 
 var animate = function animate(p) {
-  return (0, _reactEmotion.keyframes)(_templateObject2, horizontalOffset(p), verticalOffset(p));
+  return (/*#__PURE__*/(0, _reactEmotion.keyframes)('0%{transform-origin:center center;transform:translate(0%,0%);}100%{transform-origin:center center;transform:translate( ', horizontalOffset(p), '%,', verticalOffset(p), '% );}label:animate;')
+  );
 };
 
-var Wrapper = (0, _reactEmotion2.default)('div')(_templateObject3, animate, function (p) {
+var Wrapper = /*#__PURE__*/(0, _reactEmotion2.default)('div', {
+  label: 'Wrapper',
+  target: 'ejplyi41'
+})('animation:0.7s ', animate, ';position:', function (p) {
   return p.inFlow ? 'relative' : 'absolute';
-}, function (p) {
+}, ';width:100%;top:0;left:0;transform:translate(', function (p) {
   return horizontalOffset(p);
-}, function (p) {
+}, '%,', function (p) {
   return verticalOffset(p);
-});
+}, '%);');
 
 exports.default = CardStack;
 module.exports = exports['default'];

@@ -6,15 +6,6 @@ Object.defineProperty(exports, "__esModule", {
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _templateObject = _taggedTemplateLiteral(['\n  0% {\n    opacity: 1;\n  }\n  50% {\n    opacity: 1;\n  }\n  51% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 0;\n  }\n'], ['\n  0% {\n    opacity: 1;\n  }\n  50% {\n    opacity: 1;\n  }\n  51% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 0;\n  }\n']),
-    _templateObject2 = _taggedTemplateLiteral(['\n  background-color: ', ';\n  display: inline-block;\n  width: 2px;\n  height: 1.2em;\n  position: relative;\n  transform: translate(0.25em, 0.25em);\n  animation: 1s ', ' infinite;\n'], ['\n  background-color: ', ';\n  display: inline-block;\n  width: 2px;\n  height: 1.2em;\n  position: relative;\n  transform: translate(0.25em, 0.25em);\n  animation: 1s ', ' infinite;\n']),
-    _templateObject3 = _taggedTemplateLiteral(['\n  background: #2f2837;\n  width: 500px;\n  margin: 0 auto;\n'], ['\n  background: #2f2837;\n  width: 500px;\n  margin: 0 auto;\n']),
-    _templateObject4 = _taggedTemplateLiteral(['\n  color: ', ';\n'], ['\n  color: ', ';\n']),
-    _templateObject5 = _taggedTemplateLiteral(['\n  padding: 0.5em 1.5em;\n  font-size: 0.85em;\n  line-height: 1.5;\n  font-weight: 600;\n'], ['\n  padding: 0.5em 1.5em;\n  font-size: 0.85em;\n  line-height: 1.5;\n  font-weight: 600;\n']),
-    _templateObject6 = _taggedTemplateLiteral(['\n  height: 1.5em;\n  color: ', ';\n  margin-right: 0.5em;\n'], ['\n  height: 1.5em;\n  color: ', ';\n  margin-right: 0.5em;\n']),
-    _templateObject7 = _taggedTemplateLiteral(['\n  color: ', ';\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n'], ['\n  color: ', ';\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n']),
-    _templateObject8 = _taggedTemplateLiteral(['\n  height: 1em;\n  fill: ', ';\n'], ['\n  height: 1em;\n  fill: ', ';\n']);
-
 var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
@@ -41,9 +32,13 @@ var _theme2 = _interopRequireDefault(_theme);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
-var BashCard = function BashCard(props) {
+var BashCard = function BashCard(_ref) {
+  var children = _ref.children,
+      header = _ref.header,
+      props = _objectWithoutProperties(_ref, ['children', 'header']);
+
   return _react2.default.createElement(
     StyledCard,
     _extends({}, props, {
@@ -55,12 +50,12 @@ var BashCard = function BashCard(props) {
           HeaderContent,
           null,
           _react2.default.createElement(StyledIconCircleChevron, null),
-          ' Chrissy \u2014 Vim'
+          header || 'Chrissy — Vim'
         ),
         _react2.default.createElement(StyledIconClose, null)
       )
     }),
-    _react2.default.createElement(
+    children || _react2.default.createElement(
       BashContent,
       null,
       _react2.default.createElement(
@@ -92,23 +87,47 @@ var BashCard = function BashCard(props) {
   );
 };
 
-var blink = (0, _reactEmotion.keyframes)(_templateObject);
+var blink = /*#__PURE__*/(0, _reactEmotion.keyframes)('0%{opacity:1;}50%{opacity:1;}51%{opacity:0;}100%{opacity:0;}label:blink;');
 
-var Cursor = (0, _reactEmotion2.default)('span')(_templateObject2, _theme2.default.blueLight, blink);
+var Cursor = /*#__PURE__*/(0, _reactEmotion2.default)('span', {
+  label: 'Cursor',
+  target: 'e1ijumhd0'
+})('background-color:', _theme2.default.blueLight, ';display:inline-block;width:2px;height:1.2em;position:relative;transform:translate(0.25em,0.25em);animation:1s ', blink, ' infinite;');
 
-var StyledCard = (0, _reactEmotion2.default)(_card2.default)(_templateObject3);
+var StyledCard = /*#__PURE__*/(0, _reactEmotion2.default)(_card2.default, {
+  label: 'StyledCard',
+  target: 'e1ijumhd1'
+})('background:#2f2837;margin:0 auto;');
 
-var Green = (0, _reactEmotion2.default)('span')(_templateObject4, _theme2.default.green);
+var Green = /*#__PURE__*/(0, _reactEmotion2.default)('span', {
+  label: 'Green',
+  target: 'e1ijumhd2'
+})('color:', _theme2.default.green, ';');
 
-var Orange = (0, _reactEmotion2.default)('span')(_templateObject4, _theme2.default.yellowOrange);
+var Orange = /*#__PURE__*/(0, _reactEmotion2.default)('span', {
+  label: 'Orange',
+  target: 'e1ijumhd3'
+})('color:', _theme2.default.yellowOrange, ';');
 
-var BashContent = (0, _reactEmotion2.default)('p')(_templateObject5);
+var BashContent = /*#__PURE__*/(0, _reactEmotion2.default)('p', {
+  label: 'BashContent',
+  target: 'e1ijumhd4'
+})('padding:0.5em 1.5em;font-size:0.85em;line-height:1.5;font-weight:600;');
 
-var StyledIconCircleChevron = (0, _reactEmotion2.default)(_iconCircleChevron2.default)(_templateObject6, _theme2.default.purpleLight);
+var StyledIconCircleChevron = /*#__PURE__*/(0, _reactEmotion2.default)(_iconCircleChevron2.default, {
+  label: 'StyledIconCircleChevron',
+  target: 'e1ijumhd5'
+})('height:1.5em;color:', _theme2.default.purpleLight, ';margin-right:0.5em;');
 
-var HeaderContent = (0, _reactEmotion2.default)('div')(_templateObject7, _theme2.default.purpleLightest);
+var HeaderContent = /*#__PURE__*/(0, _reactEmotion2.default)('div', {
+  label: 'HeaderContent',
+  target: 'e1ijumhd6'
+})('color:', _theme2.default.purpleLightest, ';display:flex;align-items:center;justify-content:space-between;');
 
-var StyledIconClose = (0, _reactEmotion2.default)(_iconClose2.default)(_templateObject8, _theme2.default.purpleLightest);
+var StyledIconClose = /*#__PURE__*/(0, _reactEmotion2.default)(_iconClose2.default, {
+  label: 'StyledIconClose',
+  target: 'e1ijumhd7'
+})('height:1em;fill:', _theme2.default.purpleLightest, ';');
 
 exports.default = BashCard;
 module.exports = exports['default'];

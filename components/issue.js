@@ -9,8 +9,8 @@ const Issue = ({
   triangleUp,
   name,
   description,
-  animate,
-  animationDelay,
+  shouldAnimate,
+  delay,
   ...props
 }) => {
   return (
@@ -19,7 +19,7 @@ const Issue = ({
         {name && <IssueName>{name}</IssueName>}
         {description && <Description priority={priority}>{description}</Description>}
       </div>
-      <StyledIcon priority={priority} animate={animate} animationDelay={animationDelay} />
+      <StyledIcon priority={priority} shouldAnimate={shouldAnimate} delay={delay} />
       {triangleUp && <TriangleUp priority={priority} />}
     </StyledIssue>
   );
@@ -73,22 +73,23 @@ const growOut = keyframes`
 `;
 
 const StyledIcon = styled(
-  ({priority, ...props}) =>
+  ({className, priority}) =>
     priority == 'success' ? (
-      <IconCircleCheck {...props} />
+      <IconCircleCheck className={className} />
     ) : (
-      <IconCircleExclamation {...props} />
+      <IconCircleExclamation className={className} />
     )
 )`
   height: 2em;
   width: 2em;
   margin-left: 0.5em;
-  ${p => p.animate && 'transform: scale(0.5);'} ${p => p.animate && 'opacity: 0;'}
+  ${p => p.shouldAnimate && 'transform: scale(0.5);'} ${p =>
+    p.shouldAnimate && 'opacity: 0;'}
   path {
     fill: #fff;
   }
-  animation: ${p => p.animate && `0.5s ${growOut} forwards`};
-  animation-delay: ${p => p.animationDelay};
+  animation: ${p => p.shouldAnimate && `0.5s ${growOut} forwards`};
+  animation-delay: ${p => p.delay};
 `;
 
 export default Issue;

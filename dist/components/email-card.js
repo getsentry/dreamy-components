@@ -6,11 +6,6 @@ Object.defineProperty(exports, "__esModule", {
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _templateObject = _taggedTemplateLiteral(['\n  border-bottom: ', ';\n  padding: 1.25em 1.5em 1.25em 1em;\n  display: grid;\n  grid-template-columns: auto 1fr;\n  grid-column-gap: 0.5em;\n  align-items: center;\n'], ['\n  border-bottom: ', ';\n  padding: 1.25em 1.5em 1.25em 1em;\n  display: grid;\n  grid-template-columns: auto 1fr;\n  grid-column-gap: 0.5em;\n  align-items: center;\n']),
-    _templateObject2 = _taggedTemplateLiteral(['\n  font-size: 0.875em;\n  font-weight: 600;\n  color: ', ';\n'], ['\n  font-size: 0.875em;\n  font-weight: 600;\n  color: ', ';\n']),
-    _templateObject3 = _taggedTemplateLiteral(['\n  color: ', ';\n  font-size: 0.875em;\n'], ['\n  color: ', ';\n  font-size: 0.875em;\n']),
-    _templateObject4 = _taggedTemplateLiteral(['\n  width: 1.5em;\n  fill: #fff;\n  margin-right: 0.5em;\n'], ['\n  width: 1.5em;\n  fill: #fff;\n  margin-right: 0.5em;\n']);
-
 var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
@@ -36,8 +31,6 @@ var _theme = require('./theme');
 var _theme2 = _interopRequireDefault(_theme);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
@@ -70,9 +63,9 @@ var ContributorsCard = function ContributorsCard(_ref2) {
         _react2.default.Fragment,
         null,
         _react2.default.createElement(StyledIconMail, null),
-        'Version ',
+        'New Release! Version ',
         hash,
-        ' was deployed to production'
+        ' was deployed'
       )
     }),
     _react2.default.createElement(LineItem, {
@@ -94,15 +87,27 @@ var ContributorsCard = function ContributorsCard(_ref2) {
   );
 };
 
-var LineContainer = (0, _reactEmotion2.default)('div')(_templateObject, function (p) {
+var LineContainer = /*#__PURE__*/(0, _reactEmotion2.default)('div', {
+  label: 'LineContainer',
+  target: 'ebpkuxd0'
+})('border-bottom:', function (p) {
   return !p.noDelimiter && '1px solid ' + _theme2.default.borderLight;
-});
+}, ';padding:1.25em 1.5em 1.25em 1em;display:grid;grid-template-columns:auto 1fr;grid-column-gap:0.5em;align-items:center;');
 
-var StyledBadge = (0, _reactEmotion2.default)(_badge2.default)(_templateObject2, _theme2.default.gray3);
+var StyledBadge = /*#__PURE__*/(0, _reactEmotion2.default)(_badge2.default, {
+  label: 'StyledBadge',
+  target: 'ebpkuxd1'
+})('font-size:0.875em;font-weight:600;color:', _theme2.default.gray3, ';');
 
-var EmailMessage = (0, _reactEmotion2.default)('span')(_templateObject3, _theme2.default.gray2);
+var EmailMessage = /*#__PURE__*/(0, _reactEmotion2.default)('span', {
+  label: 'EmailMessage',
+  target: 'ebpkuxd2'
+})('color:', _theme2.default.gray2, ';font-size:0.875em;');
 
-var StyledIconMail = (0, _reactEmotion2.default)(_iconMail2.default)(_templateObject4);
+var StyledIconMail = /*#__PURE__*/(0, _reactEmotion2.default)(_iconMail2.default, {
+  label: 'StyledIconMail',
+  target: 'ebpkuxd3'
+})('width:1.5em;fill:#fff;margin-right:0.5em;');
 
 exports.default = ContributorsCard;
 module.exports = exports['default'];

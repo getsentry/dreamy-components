@@ -168,7 +168,9 @@ const getTransforms = p => {
   if (p.bottom && p.left) return `150%, -75%`;
 };
 
-const StyledAvatar = styled(Avatar)`
+const StyledAvatar = styled(({src, className}) => (
+  <Avatar className={className} src={src} />
+))`
   position: absolute;
   animation: 10s ${rotation(-1)} infinite
     ${p => (p.start || p.end) && `, 10s ${getAvatarAnimation(p)} infinite`};
@@ -185,7 +187,7 @@ const AvatarWrapper = styled('div')`
 
 const AvatarPackage = ({src, start, end, ...props}) => (
   <AvatarWrapper {...props}>
-    <StyledAvatar start={start} end={end} src={src} />
+    <StyledAvatar src={src} start={start} end={end} />
   </AvatarWrapper>
 );
 
