@@ -65,6 +65,7 @@
       "prettier --write",
       "stylelint components/*.jsx",
       "npm run static",
+      "npm run dynamic",
       "git add"
     ]
   }
