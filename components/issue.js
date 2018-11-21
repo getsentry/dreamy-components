@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, {keyframes} from 'react-emotion';
+import isPropValid from '@emotion/is-prop-valid';
 import IconCircleCheck from './icon-circle-check';
 import IconCircleExclamation from './icon-circle-exclamation';
 import theme from './theme';
@@ -73,12 +74,13 @@ const growOut = keyframes`
 `;
 
 const StyledIcon = styled(
-  ({className, priority}) =>
+  ({priority, ...props}) =>
     priority == 'success' ? (
-      <IconCircleCheck className={className} />
+      <IconCircleCheck {...props} />
     ) : (
-      <IconCircleExclamation className={className} />
-    )
+      <IconCircleExclamation {...props} />
+    ),
+  {shouldForwardProp: isPropValid}
 )`
   height: 2em;
   width: 2em;
