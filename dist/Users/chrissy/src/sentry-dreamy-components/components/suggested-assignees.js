@@ -99,17 +99,17 @@ var getIssueAnimation = function getIssueAnimation() {
 
 var Container = /*#__PURE__*/(0, _reactEmotion2.default)('div', {
   label: 'Container',
-  target: 'e1hcexhs0'
+  target: 'e1pw85ix0'
 })('margin:9em;position:relative;transform-origin:center center;display:flex;align-items:center;justify-content:center;');
 
 var Avatars = /*#__PURE__*/(0, _reactEmotion2.default)('div', {
   label: 'Avatars',
-  target: 'e1hcexhs1'
+  target: 'e1pw85ix1'
 })('width:70px;height:70px;position:relative;animation:10s ', rotation(), ' infinite;');
 
 var StyledIssue = /*#__PURE__*/(0, _reactEmotion2.default)(_issue2.default, {
   label: 'StyledIssue',
-  target: 'e1hcexhs2'
+  target: 'e1pw85ix2'
 })('position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:0.875em;animation:10s ', function (p) {
   return getIssueAnimation(p);
 }, ' infinite;');
@@ -124,13 +124,13 @@ var getTransforms = function getTransforms(p) {
 };
 
 var StyledAvatar = /*#__PURE__*/(0, _reactEmotion2.default)(_avatar2.default, { shouldForwardProp: _isPropValid2.default, label: 'StyledAvatar',
-  target: 'e1hcexhs3'
+  target: 'e1pw85ix3'
 })('position:absolute;animation:10s ', rotation(-1), ' infinite ', function (p) {
   return (p.startingElement || p.endingElement) && ', 10s ' + getAvatarAnimation(p) + ' infinite';
 }, ';width:70px;height:70px;');
 
 var AvatarWrapper = /*#__PURE__*/(0, _reactEmotion2.default)('div', { shouldForwardProp: _isPropValid2.default, label: 'AvatarWrapper',
-  target: 'e1hcexhs4'
+  target: 'e1pw85ix4'
 })('transform:translate(', getTransforms, ');width:70px;height:70px;position:absolute;');
 
 var AvatarPackage = function AvatarPackage(_ref) {

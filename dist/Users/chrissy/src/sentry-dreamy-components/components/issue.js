@@ -67,7 +67,7 @@ var Issue = function Issue(_ref) {
 
 var StyledIssue = /*#__PURE__*/(0, _reactEmotion2.default)('div', {
   label: 'StyledIssue',
-  target: 'ex6yyby0'
+  target: 'epjls5f0'
 })('display:inline-flex;align-items:center;justify-content:space-between;padding:0.5em 0.5em 0.5em 1em;background:', function (p) {
   return _theme2.default.alert[p.priority || 'error'].background;
 }, ';font-size:1.2em;font-family:sans-serif;color:#fff;border-radius:2em;margin-top:', function (p) {
@@ -76,17 +76,17 @@ var StyledIssue = /*#__PURE__*/(0, _reactEmotion2.default)('div', {
 
 var Description = /*#__PURE__*/(0, _reactEmotion2.default)('span', {
   label: 'Description',
-  target: 'ex6yyby1'
+  target: 'epjls5f1'
 })('color:#fff;');
 
 var IssueName = /*#__PURE__*/(0, _reactEmotion2.default)('span', {
   label: 'IssueName',
-  target: 'ex6yyby2'
+  target: 'epjls5f2'
 })('font-weight:bold;margin-right:0.5em;');
 
 var TriangleUp = /*#__PURE__*/(0, _reactEmotion2.default)('div', {
   label: 'TriangleUp',
-  target: 'ex6yyby3'
+  target: 'epjls5f3'
 })('width:0;height:0;border-left:0.5em solid transparent;border-right:0.5em solid transparent;border-bottom:0.5em solid currentColor;position:absolute;left:50%;bottom:97%;transform:translateX(-50%);');
 
 var growOut = /*#__PURE__*/(0, _reactEmotion.keyframes)('0%{transform:scale(0.5);opacity:0;}100%{transform:scale(1);opacity:1;}label:growOut;');
@@ -97,7 +97,7 @@ var StyledIcon = /*#__PURE__*/(0, _reactEmotion2.default)(function (_ref2) {
 
   return priority == 'success' ? _react2.default.createElement(_iconCircleCheck2.default, props) : _react2.default.createElement(_iconCircleExclamation2.default, props);
 }, { shouldForwardProp: _isPropValid2.default, label: 'StyledIcon',
-  target: 'ex6yyby4'
+  target: 'epjls5f4'
 })('height:2em;width:2em;margin-left:0.5em;', function (p) {
   return p.shouldAnimate && 'transform: scale(0.5);';
 }, ' ', function (p) {
