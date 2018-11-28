@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, {keyframes} from 'react-emotion';
+import isPropValid from '@emotion/is-prop-valid';
 import Avatar from './avatar';
 import Issue from './issue';
 import theme from './theme';
@@ -63,10 +64,10 @@ const rotation = (operator = 1) => keyframes`
 `;
 
 const getAvatarAnimation = p => {
-  const startColor = p.start ? theme.green : theme.gray1;
-  const endColor = p.start ? theme.gray1 : theme.green;
-  const startSize = p.start ? 1.1 : 1;
-  const endSize = p.start ? 1 : 1.1;
+  const startColor = p.startingElement ? theme.green : theme.gray1;
+  const endColor = p.startingElement ? theme.gray1 : theme.green;
+  const startSize = p.startingElement ? 1.1 : 1;
+  const endSize = p.startingElement ? 1 : 1.1;
 
   return keyframes`
     0% {
@@ -168,17 +169,17 @@ const getTransforms = p => {
   if (p.bottom && p.left) return `150%, -75%`;
 };
 
-const StyledAvatar = styled(({src, className}) => (
-  <Avatar className={className} src={src} />
-))`
+const StyledAvatar = styled(Avatar, {shouldForwardProp: isPropValid})`
   position: absolute;
   animation: 10s ${rotation(-1)} infinite
-    ${p => (p.start || p.end) && `, 10s ${getAvatarAnimation(p)} infinite`};
+    ${p =>
+      (p.startingElement || p.endingElement) &&
+      `, 10s ${getAvatarAnimation(p)} infinite`};
   width: 70px;
   height: 70px;
 `;
 
-const AvatarWrapper = styled('div')`
+const AvatarWrapper = styled('div', {shouldForwardProp: isPropValid})`
   transform: translate(${getTransforms});
   width: 70px;
   height: 70px;
@@ -187,7 +188,7 @@ const AvatarWrapper = styled('div')`
 
 const AvatarPackage = ({src, start, end, ...props}) => (
   <AvatarWrapper {...props}>
-    <StyledAvatar src={src} start={start} end={end} />
+    <StyledAvatar src={src} startingElement={start} endingElement={end} />
   </AvatarWrapper>
 );
 
