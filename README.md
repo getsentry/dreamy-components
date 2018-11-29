@@ -16,7 +16,7 @@ Development is done using storybook which boots up on `npm start`. To regenerate
 In the console:
 
 ```
-yarn add getsentry/dreamy-components
+yarn add sentry-dreamy-components
 ```
 
 and in your file:
