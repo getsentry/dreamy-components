@@ -1,8 +1,29 @@
 import React from 'react';
 import {storiesOf} from '@storybook/react';
 
-import SuggestedAssignees from '../components/suggested-assignees';
+import suggestedAssignees from '../svg/suggested-assignees.svg';
 
-storiesOf('Suggested Assignees').add('default', () => (
-  <SuggestedAssignees style={{margin: '8% auto'}} />
+storiesOf('Suggested Assignees').add('default', () => ([
+  <svg
+    viewBox={suggestedAssignees.viewBox}
+    width={'20em'}
+    height={'20em'}
+  >
+    <use href={`#${suggestedAssignees.id}`} xlinkHref={`#${suggestedAssignees.id}`} />
+  </svg>,
+  <svg
+    viewBox={suggestedAssignees.viewBox}
+    width={'10em'}
+    height={'10em'}
+  >
+    <use href={`#${suggestedAssignees.id}`} xlinkHref={`#${suggestedAssignees.id}`} />
+  </svg>,
+  <svg
+    viewBox={suggestedAssignees.viewBox}
+    width={'5em'}
+    height={'5em'}
+  >
+    <use href={`#${suggestedAssignees.id}`} xlinkHref={`#${suggestedAssignees.id}`} />
+  </svg>
+]
 ));

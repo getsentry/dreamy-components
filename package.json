@@ -18,7 +18,9 @@
     "url": "https://github.com/getsentry/dreamy-components/issues"
   },
   "homepage": "https://github.com/getsentry/dreamy-components",
-  "dependencies": {},
+  "dependencies": {
+    "svg-sprite-loader": "^4.1.3"
+  },
   "devDependencies": {
     "@emotion/is-prop-valid": "^0.7.1",
     "@storybook/addon-actions": "^3.4.8",
@@ -51,7 +53,7 @@
     "stylelint-processor-styled-components": "^1.3.0"
   },
   "scripts": {
-    "start": "start-storybook -p 6006",
+    "start": "start-storybook -p 9001 -c .storybook",
     "storybook": "start-storybook -p 6006",
     "precommit": "lint-staged",
     "static": "npx babel-node staticBuilder.js",
