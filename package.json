@@ -35,6 +35,7 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-react": "^6.24.1",
     "babel-runtime": "^6.26.0",
+    "css-loader": "^2.1.0",
     "emotion": "^9.2.6",
     "emotion-server": "^9.2.6",
     "eslint": "4.4.1",
