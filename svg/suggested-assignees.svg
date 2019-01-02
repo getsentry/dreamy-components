@@ -1,7 +1,109 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <svg id="main" width="347px" height="360px" viewBox="0 0 347 360" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>Suggested Assignees</title>
     <desc>Suggested Assignees Graphic.</desc>
+    <style>
+      :root {
+        --startSize: 1;
+        --endSize: 0.9;
+      }
+
+      @keyframes rotation {
+        0% { transform: rotate(0deg); }
+        10% { transform: rotate(-180deg); }
+        50% { transform: rotate(-180deg); }
+        60% { transform: rotate(0deg); }
+        100% { transform: rotate(0deg); }
+      }
+
+      @keyframes grow-shrink {
+        0% { transform: scale(var(--startSize)); }
+        15% { transform: scale(var(--startSize)); }
+        25% { transform: scale(var(--endSize)); }
+        65% { transform: scale(var(--endSize)); }
+        80% { transform: scale(var(--startSize)); }
+        100% { transform: scale(var(--startSize)); }
+      }
+
+      @keyframes grow-shrink-reverse {
+        0% { transform: scale(var(--endSize)); }
+        15% { transform: scale(var(--endSize)); }
+        25% { transform: scale(var(--startSize)); }
+        65% { transform: scale(var(--startSize)); }
+        80% { transform: scale(var(--endSize)); }
+        100% { transform: scale(var(--endSize)); }
+      }
+
+      @keyframes color-change {
+        0% { fill: #57be8c; }
+        15% { fill: #57be8c; }
+        25% { fill: #E7E1EC; }
+        65% { fill: #E7E1EC; }
+        80% { fill: #57be8c; }
+        100% { fill: #57be8c; }
+      }
+
+      @keyframes color-change-reverse {
+        0% { fill: #E7E1EC; }
+        15% { fill: #E7E1EC; }
+        25% { fill: #57be8c; }
+        65% { fill: #57be8c; }
+        80% { fill: #E7E1EC; }
+        100% { fill: #E7E1EC; }
+      }
+
+      @keyframes issue-color-change {
+        0% { fill: #e03e2f; }
+        15% { fill: #e03e2f; }
+        20% { fill: #57be8c; }
+        50% { fill: #57be8c; }
+        65% { fill: #e03e2f; }
+        70% { fill: #57be8c; }
+        100% { fill: #57be8c; }
+      }
+
+      svg svg {
+        overflow: visible;
+        transform-origin: center center;
+      }
+
+      .artboard {
+        animation: 5s rotation infinite;
+        transform-origin: center center;
+      }
+
+      .assignee {
+        animation: 5s rotation infinite;
+        transform-origin: center center;
+        transform: scale(0.9);
+      }
+
+      .assignee-contents {
+        transform: scale(0.9);
+        transform-origin: center center;
+      }
+
+      .assignee-start > .assignee-contents {
+        animation: 5s grow-shrink infinite;
+        transform-origin: center center;
+      }
+
+      .assignee-start > .assignee-contents > path {
+        animation: 5s color-change infinite;
+      }
+
+      .assignee-end > .assignee-contents {
+        animation: 5s grow-shrink-reverse infinite;
+        transform-origin: center center;
+      }
+
+      .assignee-end > .assignee-contents > path {
+        animation: 5s color-change-reverse infinite;
+      }
+
+      .release-unresolved path {
+        animation: 5s issue-color-change infinite;
+      }
+    </style>
     <defs>
         <circle id="path-1" cx="43.65" cy="43.65" r="43.65"></circle>
         <circle id="path-3" cx="45" cy="45" r="45"></circle>
@@ -14,10 +116,10 @@
             <stop stop-color="#3AA16F" offset="100%"></stop>
         </linearGradient>
     </defs>
-    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="artboard" class="artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <svg x="129.000000" y="0.000000" width="90.9" height="90.9">
-            <g id="assignee-start">
-                <g>
+            <g class="assignee assignee-start">
+                <g class="assignee-contents">
                   <mask id="mask-4" fill="white">
                       <use xlink:href="#path-3"></use>
                   </mask>
@@ -28,8 +130,8 @@
             </g>
         </svg>
         <svg x="0.000000" y="202.000000" width="90.9" height="90.9">
-            <g>
-              <g>
+            <g class="assignee">
+              <g class="assignee-contents">
                 <mask id="mask-4" fill="white">
                     <use xlink:href="#path-3"></use>
                 </mask>
@@ -40,8 +142,8 @@
           </g>
         </svg>
         <svg x="0.000000" y="76.000000" width="90.9" height="90.9">
-            <g>
-              <g>
+            <g class="assignee">
+              <g class="assignee-contents">
                 <mask id="mask-6" fill="white">
                     <use xlink:href="#path-5"></use>
                 </mask>
@@ -52,8 +154,8 @@
           </g>
         </svg>
         <svg x="256.000000" y="202.000000" width="90.9" height="90.9">
-            <g>
-              <g>
+            <g class="assignee">
+              <g class="assignee-contents">
                 <mask id="mask-8" fill="white">
                     <use xlink:href="#path-7"></use>
                 </mask>
@@ -64,8 +166,8 @@
           </g>
         </svg>
         <svg x="129.000000" y="269.000000" width="90.4" height="90.4">
-            <g id="assignee-end">
-              <g>
+            <g class="assignee assignee-end">
+              <g class="assignee-contents">
                 <mask id="mask-10" fill="white">
                     <use xlink:href="#path-9"></use>
                 </mask>
@@ -76,8 +178,8 @@
           </g>
         </svg>
         <svg x="256.000000" y="76.000000" width="90.9" height="90.9">
-            <g>
-              <g>
+            <g class="assignee">
+              <g class="assignee-contents">
                 <mask id="mask-12" fill="white">
                     <use xlink:href="#path-11"></use>
                 </mask>
@@ -88,7 +190,7 @@
           </g>
         </svg>
     </g>
-    <svg id="release--unresolved" x="104.000000" y="140.000000" width="138" height="67">
+    <svg class="release-unresolved" x="104.000000" y="140.000000" width="138" height="67">
         <path d="M58,13 L69,0 L80,13 L112,13 C126.359403,13 138,24.6405965 138,39 L138,41 C138,55.3594035 126.359403,67 112,67 L26,67 C11.6405965,67 1.75851975e-15,55.3594035 0,41 L0,39 C-1.75851975e-15,24.6405965 11.6405965,13 26,13 L58,13 Z" id="Combined-Shape" fill="url(#linearGradient-13)"></path>
         <text id="TypeError" font-family="Helvetica" font-size="18" font-weight="normal" fill="#FFFFFF">
             <tspan x="42.2006874" y="46">E3fc2x</tspan>
