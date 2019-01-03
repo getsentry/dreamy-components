@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="578px" height="299px" viewBox="0 0 578 299" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>emails</title>
+    <desc>emails graphic</desc>
+    <style>
+
+      @keyframes top-left-out {
+        0% {
+          transform: translate(35px, 23px);
+        }
+        100% {
+          transform: translate(15px, 13px);
+        }
+      }
+
+      @keyframes bottom-right-out {
+        0% {
+          transform: translate(126px, 58px);
+        }
+        100% {
+          transform: translate(146px, 68px);
+        }
+      }
+
+      #email-card-top {
+        transform-origin: center center;
+        animation: 1s top-left-out;
+      }
+
+      #email-card-bottom {
+        transform-origin: center center;
+        animation: 1s bottom-right-out;
+      }
+    </style>
+    <defs>
+        <linearGradient x1="100%" y1="0%" x2="1.37983363%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FCFCFC" offset="100%"></stop>
+        </linearGradient>
+        <path d="M26,0 L391,0 C405.359403,-2.63777963e-15 417,11.6405965 417,26 L417,192 C417,206.359403 405.359403,218 391,218 L26,218 C11.6405965,218 1.75851975e-15,206.359403 0,192 L0,26 C-1.75851975e-15,11.6405965 11.6405965,2.63777963e-15 26,0 Z" id="path-2"></path>
+        <filter x="-5.6%" y="-9.9%" width="111.3%" height="121.6%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="7.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.284757653   0 0 0 0 0.284757653   0 0 0 0 0.284757653  0 0 0 0.233582428 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M26,0 L391,0 C405.359403,-2.63777963e-15 417,11.6405965 417,26 L417,192 C417,206.359403 405.359403,218 391,218 L26,218 C11.6405965,218 1.75851975e-15,206.359403 0,192 L0,26 C-1.75851975e-15,11.6405965 11.6405965,2.63777963e-15 26,0 Z" id="path-4"></path>
+        <filter x="-5.6%" y="-11.7%" width="111.3%" height="121.6%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="-2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="7.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.284757653   0 0 0 0 0.284757653   0 0 0 0 0.284757653  0 0 0 0.233582428 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M26,0 L391,0 C405.359403,-2.63777963e-15 417,11.6405965 417,26 L417,192 C417,206.359403 405.359403,218 391,218 L26,218 C11.6405965,218 1.75851975e-15,206.359403 0,192 L0,26 C-1.75851975e-15,11.6405965 11.6405965,2.63777963e-15 26,0 Z" id="path-6"></path>
+        <filter x="-5.6%" y="-11.7%" width="111.3%" height="121.6%" filterUnits="objectBoundingBox" id="filter-7">
+            <feOffset dx="0" dy="-2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="7.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.284757653   0 0 0 0 0.284757653   0 0 0 0 0.284757653  0 0 0 0.233582428 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="emails" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="email-card-top" transform="translate(15.000000, 13.000000)">
+            <g id="commit-data-releases-copy">
+                <g id="commit-data-visual">
+                    <g id="Group-6-Copy">
+                        <g id="Rectangle-2-Copy">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                            <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                        </g>
+                        <g id="Group-4" transform="translate(24.000000, 123.333333)">
+                            <g id="attribution-test" transform="translate(0.000000, 0.500000)">
+                                <text id="Add-ArrayJoin-if-nes" font-family="Helvetica" font-size="14" font-weight="normal" fill="#706779">
+                                    <tspan x="29" y="14">Add ability to reset querybuilder</tspan>
+                                </text>
+                                <g id="DC-Copy-3" fill-rule="evenodd" stroke-width="1">
+                                    <g id="Group-Copy">
+                                        <ellipse id="Oval" fill="#D94AA2" cx="9" cy="9.5" rx="9" ry="9.5"></ellipse>
+                                        <text id="DM" font-family="Helvetica-Bold, Helvetica" font-size="9" font-weight="bold" fill="#FFFFFF">
+                                            <tspan x="2.00170898" y="13">DM</tspan>
+                                        </text>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="Group-5" transform="translate(24.000000, 70.000000)">
+                            <g id="attribution-test">
+                                <text id="Add-ArrayJoin-if-nes" font-family="Helvetica" font-size="14" font-weight="normal" fill="#706779">
+                                    <tspan x="29" y="14">Add ArrayJoin if nested column is present</tspan>
+                                </text>
+                                <g id="DC-Copy-2" fill-rule="evenodd" stroke-width="1">
+                                    <g id="Group-Copy">
+                                        <ellipse id="Oval" fill="#4A90E2" cx="9" cy="9.5" rx="9" ry="9.5"></ellipse>
+                                        <text id="JA" font-family="Helvetica-Bold, Helvetica" font-size="9" font-weight="bold" fill="#FFFFFF">
+                                            <tspan x="3.24755859" y="13">JA</tspan>
+                                        </text>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="Group-3" transform="translate(24.000000, 178.666667)">
+                            <g id="attribution-test">
+                                <text id="Add-ArrayJoin-if-nes" font-family="Helvetica" font-size="14" font-weight="normal" fill="#706779">
+                                    <tspan x="29" y="14">Fix aliases for tag columns</tspan>
+                                </text>
+                                <g id="DC-Copy" fill-rule="evenodd" stroke-width="1">
+                                    <g id="Group-Copy">
+                                        <ellipse id="Oval" fill="#67C89B" cx="9" cy="9.5" rx="9" ry="9.5"></ellipse>
+                                        <text id="CJ" font-family="Helvetica-Bold, Helvetica" font-size="9" font-weight="bold" fill="#FFFFFF">
+                                            <tspan x="3.24755859" y="13">CJ</tspan>
+                                        </text>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                        <path d="M2,108 L417.503322,108" id="Path-2" stroke="#E7E1EC"></path>
+                        <path d="M2,54.15 L417.503322,54.15" id="Path-2-Copy-3" stroke="#E7E1EC"></path>
+                        <path d="M2,163 L417.503322,163" id="Path-2-Copy" stroke="#E7E1EC"></path>
+                    </g>
+                </g>
+            </g>
+            <g id="Group-8">
+                <path d="M26,0 L391,0 C405.359403,-2.63777963e-15 417,11.6405965 417,26 L417,54.1992188 L0,54.1992188 L0,26 C-1.75851975e-15,11.6405965 11.6405965,6.19049331e-15 26,0 Z" id="Rectangle-2-Copy" fill="#5C4CC7"></path>
+                <g id="System/Mail" transform="translate(23.000000, 17.000000)">
+                    <g id="Group-49">
+                        <g id="Group-47">
+                            <g id="Group-12">
+                                <g id="Group-22"></g>
+                            </g>
+                        </g>
+                    </g>
+                    <path d="M4.71428571,4.71428571 C3.84640968,4.71428571 3.14285714,5.41783825 3.14285714,6.28571429 L3.14285714,15.7142857 C3.14285714,16.5821617 3.84640968,17.2857143 4.71428571,17.2857143 L17.2857143,17.2857143 C18.1535903,17.2857143 18.8571429,16.5821617 18.8571429,15.7142857 L18.8571429,6.28571429 C18.8571429,5.41783825 18.1535903,4.71428571 17.2857143,4.71428571 L4.71428571,4.71428571 Z M4.71428571,3.14285714 L17.2857143,3.14285714 C19.0214664,3.14285714 20.4285714,4.54996221 20.4285714,6.28571429 L20.4285714,15.7142857 C20.4285714,17.4500378 19.0214664,18.8571429 17.2857143,18.8571429 L4.71428571,18.8571429 C2.97853364,18.8571429 1.57142857,17.4500378 1.57142857,15.7142857 L1.57142857,6.28571429 C1.57142857,4.54996221 2.97853364,3.14285714 4.71428571,3.14285714 Z" id="Rectangle-64" fill="#FFFFFF" fill-rule="nonzero"></path>
+                    <path d="M11,12.5714286 C11.867876,12.5714286 12.5714286,11.867876 12.5714286,11 C12.5714286,10.132124 11.867876,9.42857143 11,9.42857143 C10.132124,9.42857143 9.42857143,10.132124 9.42857143,11 C9.42857143,11.867876 10.132124,12.5714286 11,12.5714286 Z M11,14.1428571 C9.26424793,14.1428571 7.85714286,12.7357521 7.85714286,11 C7.85714286,9.26424793 9.26424793,7.85714286 11,7.85714286 C12.7357521,7.85714286 14.1428571,9.26424793 14.1428571,11 C14.1428571,12.7357521 12.7357521,14.1428571 11,14.1428571 Z" id="Oval-6" fill="#FFFFFF" fill-rule="nonzero"></path>
+                    <path d="M2.55159607,5.2317384 L8.05197972,11.5166854 C8.33776095,11.8432299 8.83414901,11.876275 9.16069348,11.5904938 C9.48723795,11.3047125 9.52028309,10.8083245 9.23450186,10.48178 L3.73411821,4.19683302 C3.44833698,3.87028855 2.95194893,3.83724342 2.62540445,4.12302464 C2.29885998,4.40880587 2.26581484,4.90519393 2.55159607,5.2317384 Z" id="Line" fill="#FFFFFF" fill-rule="nonzero"></path>
+                    <path d="M18.2695899,4.19667826 L12.7667126,10.4852699 C12.4809518,10.8118323 12.5140281,11.3082183 12.8405904,11.593979 C13.1671528,11.8797398 13.6635388,11.8466636 13.9492996,11.5201012 L19.4521769,5.23150952 C19.7379377,4.90494714 19.7048615,4.40856115 19.3782991,4.12280039 C19.0517367,3.83703963 18.5553507,3.87011588 18.2695899,4.19667826 Z" id="Line" fill="#FFFFFF" fill-rule="nonzero"></path>
+                </g>
+                <text id="Version-cdER567-was" font-family="Helvetica" font-size="14" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="52" y="33">Version cdER567 was deployed to production</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="email-card-center" transform="translate(81.000000, 40.000000)">
+            <g id="commit-data-releases-copy">
+                <g id="commit-data-visual">
+                    <g id="Group-6-Copy">
+                        <g id="Rectangle-2-Copy">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                            <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-4"></use>
+                        </g>
+                        <g id="Group-4" transform="translate(24.000000, 123.333333)">
+                            <g id="attribution-test" transform="translate(0.000000, 0.500000)">
+                                <text id="Add-ArrayJoin-if-nes" font-family="Helvetica" font-size="14" font-weight="normal" fill="#706779">
+                                    <tspan x="29" y="14">Add ability to reset querybuilder</tspan>
+                                </text>
+                                <g id="DC-Copy-3" fill-rule="evenodd" stroke-width="1">
+                                    <g id="Group-Copy">
+                                        <ellipse id="Oval" fill="#D94AA2" cx="9" cy="9.5" rx="9" ry="9.5"></ellipse>
+                                        <text id="DM" font-family="Helvetica-Bold, Helvetica" font-size="9" font-weight="bold" fill="#FFFFFF">
+                                            <tspan x="2.00170898" y="13">DM</tspan>
+                                        </text>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="Group-5" transform="translate(24.000000, 70.000000)">
+                            <g id="attribution-test">
+                                <text id="Add-ArrayJoin-if-nes" font-family="Helvetica" font-size="14" font-weight="normal" fill="#706779">
+                                    <tspan x="29" y="14">Add ArrayJoin if nested column is present</tspan>
+                                </text>
+                                <g id="DC-Copy-2" fill-rule="evenodd" stroke-width="1">
+                                    <g id="Group-Copy">
+                                        <ellipse id="Oval" fill="#4A90E2" cx="9" cy="9.5" rx="9" ry="9.5"></ellipse>
+                                        <text id="JA" font-family="Helvetica-Bold, Helvetica" font-size="9" font-weight="bold" fill="#FFFFFF">
+                                            <tspan x="3.24755859" y="13">JA</tspan>
+                                        </text>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="Group-3" transform="translate(24.000000, 178.666667)">
+                            <g id="attribution-test">
+                                <text id="Add-ArrayJoin-if-nes" font-family="Helvetica" font-size="14" font-weight="normal" fill="#706779">
+                                    <tspan x="29" y="14">Fix aliases for tag columns</tspan>
+                                </text>
+                                <g id="DC" fill-rule="evenodd" stroke-width="1">
+                                    <g id="Group-Copy">
+                                        <ellipse id="Oval" fill="#F5A623" cx="9" cy="9.5" rx="9" ry="9.5"></ellipse>
+                                        <text id="DC" font-family="Helvetica-Bold, Helvetica" font-size="9" font-weight="bold" fill="#FFFFFF">
+                                            <tspan x="2.50048828" y="13">DC</tspan>
+                                        </text>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                        <path d="M2,108 L417.503322,108" id="Path-2" stroke="#E7E1EC"></path>
+                        <path d="M2,54.15 L417.503322,54.15" id="Path-2-Copy-3" stroke="#E7E1EC"></path>
+                        <path d="M2,163 L417.503322,163" id="Path-2-Copy" stroke="#E7E1EC"></path>
+                    </g>
+                </g>
+            </g>
+            <g id="Group-8">
+                <path d="M26,0 L391,0 C405.359403,-2.63777963e-15 417,11.6405965 417,26 L417,54.1992188 L0,54.1992188 L0,26 C-1.75851975e-15,11.6405965 11.6405965,6.19049331e-15 26,0 Z" id="Rectangle-2-Copy" fill="#8B7FD7"></path>
+                <g id="System/Mail" transform="translate(23.000000, 17.000000)">
+                    <g id="Group-49">
+                        <g id="Group-47">
+                            <g id="Group-12">
+                                <g id="Group-22"></g>
+                            </g>
+                        </g>
+                    </g>
+                    <path d="M4.71428571,4.71428571 C3.84640968,4.71428571 3.14285714,5.41783825 3.14285714,6.28571429 L3.14285714,15.7142857 C3.14285714,16.5821617 3.84640968,17.2857143 4.71428571,17.2857143 L17.2857143,17.2857143 C18.1535903,17.2857143 18.8571429,16.5821617 18.8571429,15.7142857 L18.8571429,6.28571429 C18.8571429,5.41783825 18.1535903,4.71428571 17.2857143,4.71428571 L4.71428571,4.71428571 Z M4.71428571,3.14285714 L17.2857143,3.14285714 C19.0214664,3.14285714 20.4285714,4.54996221 20.4285714,6.28571429 L20.4285714,15.7142857 C20.4285714,17.4500378 19.0214664,18.8571429 17.2857143,18.8571429 L4.71428571,18.8571429 C2.97853364,18.8571429 1.57142857,17.4500378 1.57142857,15.7142857 L1.57142857,6.28571429 C1.57142857,4.54996221 2.97853364,3.14285714 4.71428571,3.14285714 Z" id="Rectangle-64" fill="#FFFFFF" fill-rule="nonzero"></path>
+                    <path d="M11,12.5714286 C11.867876,12.5714286 12.5714286,11.867876 12.5714286,11 C12.5714286,10.132124 11.867876,9.42857143 11,9.42857143 C10.132124,9.42857143 9.42857143,10.132124 9.42857143,11 C9.42857143,11.867876 10.132124,12.5714286 11,12.5714286 Z M11,14.1428571 C9.26424793,14.1428571 7.85714286,12.7357521 7.85714286,11 C7.85714286,9.26424793 9.26424793,7.85714286 11,7.85714286 C12.7357521,7.85714286 14.1428571,9.26424793 14.1428571,11 C14.1428571,12.7357521 12.7357521,14.1428571 11,14.1428571 Z" id="Oval-6" fill="#FFFFFF" fill-rule="nonzero"></path>
+                    <path d="M2.55159607,5.2317384 L8.05197972,11.5166854 C8.33776095,11.8432299 8.83414901,11.876275 9.16069348,11.5904938 C9.48723795,11.3047125 9.52028309,10.8083245 9.23450186,10.48178 L3.73411821,4.19683302 C3.44833698,3.87028855 2.95194893,3.83724342 2.62540445,4.12302464 C2.29885998,4.40880587 2.26581484,4.90519393 2.55159607,5.2317384 Z" id="Line" fill="#FFFFFF" fill-rule="nonzero"></path>
+                    <path d="M18.2695899,4.19667826 L12.7667126,10.4852699 C12.4809518,10.8118323 12.5140281,11.3082183 12.8405904,11.593979 C13.1671528,11.8797398 13.6635388,11.8466636 13.9492996,11.5201012 L19.4521769,5.23150952 C19.7379377,4.90494714 19.7048615,4.40856115 19.3782991,4.12280039 C19.0517367,3.83703963 18.5553507,3.87011588 18.2695899,4.19667826 Z" id="Line" fill="#FFFFFF" fill-rule="nonzero"></path>
+                </g>
+                <text id="Version-cdER567-was" font-family="Helvetica" font-size="14" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="52" y="33">Version cdER567 was deployed to production</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="email-card-bottom" transform="translate(146.000000, 68.000000)">
+            <g id="commit-data-releases-copy">
+                <g id="commit-data-visual">
+                    <g id="Group-6-Copy">
+                        <g id="Rectangle-2-Copy">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
+                            <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-6"></use>
+                        </g>
+                        <g id="Group-4" transform="translate(24.000000, 123.333333)">
+                            <g id="attribution-test" transform="translate(0.000000, 0.500000)">
+                                <text id="Add-ArrayJoin-if-nes" font-family="Helvetica" font-size="14" font-weight="normal" fill="#706779">
+                                    <tspan x="29" y="14">Add ability to reset querybuilder</tspan>
+                                </text>
+                                <g id="DC-Copy" fill-rule="evenodd" stroke-width="1">
+                                    <g id="Group-Copy">
+                                        <ellipse id="Oval" fill="#67C89B" cx="9" cy="9.5" rx="9" ry="9.5"></ellipse>
+                                        <text id="CJ" font-family="Helvetica-Bold, Helvetica" font-size="9" font-weight="bold" fill="#FFFFFF">
+                                            <tspan x="3.24755859" y="13">CJ</tspan>
+                                        </text>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="Group-5" transform="translate(24.000000, 70.000000)">
+                            <g id="attribution-test">
+                                <text id="Add-ArrayJoin-if-nes" font-family="Helvetica" font-size="14" font-weight="normal" fill="#706779">
+                                    <tspan x="29" y="14">Add ArrayJoin if nested column is present</tspan>
+                                </text>
+                                <g id="DC" fill-rule="evenodd" stroke-width="1">
+                                    <g id="Group-Copy">
+                                        <ellipse id="Oval" fill="#F5A623" cx="9" cy="9.5" rx="9" ry="9.5"></ellipse>
+                                        <text id="DC" font-family="Helvetica-Bold, Helvetica" font-size="9" font-weight="bold" fill="#FFFFFF">
+                                            <tspan x="2.50048828" y="13">DC</tspan>
+                                        </text>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="Group-3" transform="translate(24.000000, 178.666667)">
+                            <g id="attribution-test">
+                                <text id="Add-ArrayJoin-if-nes" font-family="Helvetica" font-size="14" font-weight="normal" fill="#706779">
+                                    <tspan x="29" y="14">Fix aliases for tag columns</tspan>
+                                </text>
+                                <g id="DC-Copy-2" fill-rule="evenodd" stroke-width="1">
+                                    <g id="Group-Copy">
+                                        <ellipse id="Oval" fill="#4A90E2" cx="9" cy="9.5" rx="9" ry="9.5"></ellipse>
+                                        <text id="JA" font-family="Helvetica-Bold, Helvetica" font-size="9" font-weight="bold" fill="#FFFFFF">
+                                            <tspan x="3.24755859" y="13">JA</tspan>
+                                        </text>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                        <path d="M2,108 L417.503322,108" id="Path-2" stroke="#E7E1EC"></path>
+                        <path d="M2,54.15 L417.503322,54.15" id="Path-2-Copy-3" stroke="#E7E1EC"></path>
+                        <path d="M2,163 L417.503322,163" id="Path-2-Copy" stroke="#E7E1EC"></path>
+                    </g>
+                </g>
+            </g>
+            <g id="Group-8">
+                <path d="M26,0 L391,0 C405.359403,-2.63777963e-15 417,11.6405965 417,26 L417,54.1992188 L0,54.1992188 L0,26 C-1.75851975e-15,11.6405965 11.6405965,6.19049331e-15 26,0 Z" id="Rectangle-2-Copy" fill="#40358B"></path>
+                <g id="System/Mail" transform="translate(23.000000, 17.000000)">
+                    <g id="Group-49">
+                        <g id="Group-47">
+                            <g id="Group-12">
+                                <g id="Group-22"></g>
+                            </g>
+                        </g>
+                    </g>
+                    <path d="M4.71428571,4.71428571 C3.84640968,4.71428571 3.14285714,5.41783825 3.14285714,6.28571429 L3.14285714,15.7142857 C3.14285714,16.5821617 3.84640968,17.2857143 4.71428571,17.2857143 L17.2857143,17.2857143 C18.1535903,17.2857143 18.8571429,16.5821617 18.8571429,15.7142857 L18.8571429,6.28571429 C18.8571429,5.41783825 18.1535903,4.71428571 17.2857143,4.71428571 L4.71428571,4.71428571 Z M4.71428571,3.14285714 L17.2857143,3.14285714 C19.0214664,3.14285714 20.4285714,4.54996221 20.4285714,6.28571429 L20.4285714,15.7142857 C20.4285714,17.4500378 19.0214664,18.8571429 17.2857143,18.8571429 L4.71428571,18.8571429 C2.97853364,18.8571429 1.57142857,17.4500378 1.57142857,15.7142857 L1.57142857,6.28571429 C1.57142857,4.54996221 2.97853364,3.14285714 4.71428571,3.14285714 Z" id="Rectangle-64" fill="#FFFFFF" fill-rule="nonzero"></path>
+                    <path d="M11,12.5714286 C11.867876,12.5714286 12.5714286,11.867876 12.5714286,11 C12.5714286,10.132124 11.867876,9.42857143 11,9.42857143 C10.132124,9.42857143 9.42857143,10.132124 9.42857143,11 C9.42857143,11.867876 10.132124,12.5714286 11,12.5714286 Z M11,14.1428571 C9.26424793,14.1428571 7.85714286,12.7357521 7.85714286,11 C7.85714286,9.26424793 9.26424793,7.85714286 11,7.85714286 C12.7357521,7.85714286 14.1428571,9.26424793 14.1428571,11 C14.1428571,12.7357521 12.7357521,14.1428571 11,14.1428571 Z" id="Oval-6" fill="#FFFFFF" fill-rule="nonzero"></path>
+                    <path d="M2.55159607,5.2317384 L8.05197972,11.5166854 C8.33776095,11.8432299 8.83414901,11.876275 9.16069348,11.5904938 C9.48723795,11.3047125 9.52028309,10.8083245 9.23450186,10.48178 L3.73411821,4.19683302 C3.44833698,3.87028855 2.95194893,3.83724342 2.62540445,4.12302464 C2.29885998,4.40880587 2.26581484,4.90519393 2.55159607,5.2317384 Z" id="Line" fill="#FFFFFF" fill-rule="nonzero"></path>
+                    <path d="M18.2695899,4.19667826 L12.7667126,10.4852699 C12.4809518,10.8118323 12.5140281,11.3082183 12.8405904,11.593979 C13.1671528,11.8797398 13.6635388,11.8466636 13.9492996,11.5201012 L19.4521769,5.23150952 C19.7379377,4.90494714 19.7048615,4.40856115 19.3782991,4.12280039 C19.0517367,3.83703963 18.5553507,3.87011588 18.2695899,4.19667826 Z" id="Line" fill="#FFFFFF" fill-rule="nonzero"></path>
+                </g>
+                <text id="Version-7cd0912-was" font-family="Helvetica" font-size="14" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="52" y="33">Version 7cd0912 was deployed to production</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
