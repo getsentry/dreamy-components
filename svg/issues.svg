@@ -1,0 +1,174 @@
+<svg width="557px" height="350px" viewBox="0 0 557 350" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>issues</title>
+    <desc>issues graphic</desc>
+    <style>
+
+      @keyframes top-left-out {
+        0% {
+          transform: translate(34px, 22px);
+        }
+        100% {
+          transform: translate(4px, 2px);
+        }
+      }
+
+      @keyframes bottom-right-out {
+        0% {
+          transform: translate(106px, 109px);
+        }
+        100% {
+          transform: translate(136px, 129px);
+        }
+      }
+
+      #file-changes {
+        transform-origin: center center;
+        animation: 1s top-left-out;
+      }
+
+      #resolved-issues {
+        transform-origin: center center;
+        animation: 1s bottom-right-out;
+      }
+    </style>
+    <defs>
+        <linearGradient x1="98.6014314%" y1="0%" x2="0%" y2="96.3675363%" id="linearGradient-1">
+            <stop stop-color="#483A95" offset="0%"></stop>
+            <stop stop-color="#40358B" offset="100%"></stop>
+        </linearGradient>
+        <path d="M26,0 L391,0 C405.359403,-2.63777963e-15 417,11.6405965 417,26 L417,191 C417,205.359403 405.359403,217 391,217 L26,217 C11.6405965,217 1.75851975e-15,205.359403 0,191 L0,26 C-1.75851975e-15,11.6405965 11.6405965,2.63777963e-15 26,0 Z" id="path-2"></path>
+        <filter x="-1.7%" y="-2.3%" width="103.4%" height="106.5%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.173743207 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M26,0 L391,0 C405.359403,-2.63777963e-15 417,11.6405965 417,26 L417,188 C417,202.359403 405.359403,214 391,214 L26,214 C11.6405965,214 1.75851975e-15,202.359403 0,188 L0,26 C-1.75851975e-15,11.6405965 11.6405965,2.63777963e-15 26,0 Z" id="path-4"></path>
+        <filter x="-1.7%" y="-2.3%" width="103.4%" height="106.5%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.148676658   0 0 0 0 0.148676658   0 0 0 0 0.148676658  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M26,0 L391,0 C405.359403,-2.63777963e-15 417,11.6405965 417,26 L417,189 C417,203.359403 405.359403,215 391,215 L26,215 C11.6405965,215 1.75851975e-15,203.359403 0,189 L0,26 C-1.75851975e-15,11.6405965 11.6405965,2.63777963e-15 26,0 Z" id="path-6"></path>
+        <filter x="-1.7%" y="-2.3%" width="103.4%" height="106.5%" filterUnits="objectBoundingBox" id="filter-7">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.0887276786   0 0 0 0 0.0887276786   0 0 0 0 0.0887276786  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="issues" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="file-changes" transform="translate(4.000000, 2.000000)">
+            <g id="Rectangle-2-Copy">
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+            </g>
+            <text id="File-Changes" font-family="Helvetica" font-size="18" font-weight="normal" fill="#CEC8FD">
+                <tspan x="25" y="34.5">File Changes</tspan>
+            </text>
+            <g id="attribution-copy-4" transform="translate(21.000000, 73.000000)" fill="#ADA4EB">
+                <text id="{name}" font-family="Helvetica" font-size="14" font-weight="normal">
+                    <tspan x="24" y="15">src/endpoints/events.py</tspan>
+                </text>
+                <g id="file" transform="translate(-2.000000, -1.000000)" fill-rule="evenodd" stroke-width="1">
+                    <g id="System/Files">
+                        <path d="M4.875,3 C4.66789322,3 4.5,3.16789322 4.5,3.375 L4.5,14.625 C4.5,14.8321068 4.66789322,15 4.875,15 L13.125,15 C13.3321068,15 13.5,14.8321068 13.5,14.625 L13.5,6.15533009 C13.5,6.0558739 13.4604912,5.96049118 13.390165,5.89016504 L10.609835,3.10983496 C10.5395088,3.03950882 10.4441261,3 10.3446699,3 L4.875,3 Z M4.875,1.5 L10.3446699,1.5 C10.8419508,1.5 11.3188644,1.69754408 11.6704951,2.04917479 L14.4508252,4.82950487 C14.8024559,5.18113558 15,5.65804917 15,6.15533009 L15,14.625 C15,15.6605339 14.1605339,16.5 13.125,16.5 L4.875,16.5 C3.83946609,16.5 3,15.6605339 3,14.625 L3,3.375 C3,2.33946609 3.83946609,1.5 4.875,1.5 Z" id="Rectangle-84" fill-rule="nonzero"></path>
+                        <path d="M10.4994507,6.00036621 L10.4994507,3 L9,3 L9,6.5 C9,7.05228475 9.44771525,7.5 10,7.5 L13.5,7.5 L13.5,6.00036621 L10.4994507,6.00036621 Z" id="Combined-Shape"></path>
+                        <path d="M18,17.5 L18,6.25 C18,5.69771525 17.5522847,5.25 17,5.25 L16.5,5.25 L16.5,17 C16.5,17.5522847 16.0522847,18 15.5,18 L6,18 L6,18.5 C6,19.0522847 6.44771525,19.5 7,19.5 L16,19.5 C17.1045695,19.5 18,18.6045695 18,17.5 Z" id="Combined-Shape"></path>
+                    </g>
+                </g>
+            </g>
+            <path d="M0,55 L415.503322,55" id="Path-2" stroke="#8B7FD7"></path>
+            <path d="M0,110 L415.503322,110" id="Path-2-Copy" stroke="#8B7FD7"></path>
+            <path d="M0,164 L415.503322,164" id="Path-2-Copy-2" stroke="#8B7FD7"></path>
+            <g id="attribution-copy-4" transform="translate(21.000000, 127.000000)" fill="#ADA4EB">
+                <text id="{name}" font-family="Helvetica" font-size="14" font-weight="normal">
+                    <tspan x="24" y="15">confs/server.py</tspan>
+                </text>
+                <g id="file" transform="translate(-2.000000, -1.000000)" fill-rule="evenodd" stroke-width="1">
+                    <g id="System/Files">
+                        <path d="M4.875,3 C4.66789322,3 4.5,3.16789322 4.5,3.375 L4.5,14.625 C4.5,14.8321068 4.66789322,15 4.875,15 L13.125,15 C13.3321068,15 13.5,14.8321068 13.5,14.625 L13.5,6.15533009 C13.5,6.0558739 13.4604912,5.96049118 13.390165,5.89016504 L10.609835,3.10983496 C10.5395088,3.03950882 10.4441261,3 10.3446699,3 L4.875,3 Z M4.875,1.5 L10.3446699,1.5 C10.8419508,1.5 11.3188644,1.69754408 11.6704951,2.04917479 L14.4508252,4.82950487 C14.8024559,5.18113558 15,5.65804917 15,6.15533009 L15,14.625 C15,15.6605339 14.1605339,16.5 13.125,16.5 L4.875,16.5 C3.83946609,16.5 3,15.6605339 3,14.625 L3,3.375 C3,2.33946609 3.83946609,1.5 4.875,1.5 Z" id="Rectangle-84" fill-rule="nonzero"></path>
+                        <path d="M10.4994507,6.00036621 L10.4994507,3 L9,3 L9,6.5 C9,7.05228475 9.44771525,7.5 10,7.5 L13.5,7.5 L13.5,6.00036621 L10.4994507,6.00036621 Z" id="Combined-Shape"></path>
+                        <path d="M18,17.5 L18,6.25 C18,5.69771525 17.5522847,5.25 17,5.25 L16.5,5.25 L16.5,17 C16.5,17.5522847 16.0522847,18 15.5,18 L6,18 L6,18.5 C6,19.0522847 6.44771525,19.5 7,19.5 L16,19.5 C17.1045695,19.5 18,18.6045695 18,17.5 Z" id="Combined-Shape"></path>
+                    </g>
+                </g>
+            </g>
+            <g id="attribution-copy-4" transform="translate(21.000000, 180.000000)" fill="#ADA4EB">
+                <text id="{name}" font-family="Helvetica" font-size="14" font-weight="normal">
+                    <tspan x="24" y="15">js/urls.js</tspan>
+                </text>
+                <g id="file" transform="translate(-2.000000, -1.000000)" fill-rule="evenodd" stroke-width="1">
+                    <g id="System/Files">
+                        <path d="M4.875,3 C4.66789322,3 4.5,3.16789322 4.5,3.375 L4.5,14.625 C4.5,14.8321068 4.66789322,15 4.875,15 L13.125,15 C13.3321068,15 13.5,14.8321068 13.5,14.625 L13.5,6.15533009 C13.5,6.0558739 13.4604912,5.96049118 13.390165,5.89016504 L10.609835,3.10983496 C10.5395088,3.03950882 10.4441261,3 10.3446699,3 L4.875,3 Z M4.875,1.5 L10.3446699,1.5 C10.8419508,1.5 11.3188644,1.69754408 11.6704951,2.04917479 L14.4508252,4.82950487 C14.8024559,5.18113558 15,5.65804917 15,6.15533009 L15,14.625 C15,15.6605339 14.1605339,16.5 13.125,16.5 L4.875,16.5 C3.83946609,16.5 3,15.6605339 3,14.625 L3,3.375 C3,2.33946609 3.83946609,1.5 4.875,1.5 Z" id="Rectangle-84" fill-rule="nonzero"></path>
+                        <path d="M10.4994507,6.00036621 L10.4994507,3 L9,3 L9,6.5 C9,7.05228475 9.44771525,7.5 10,7.5 L13.5,7.5 L13.5,6.00036621 L10.4994507,6.00036621 Z" id="Combined-Shape"></path>
+                        <path d="M18,17.5 L18,6.25 C18,5.69771525 17.5522847,5.25 17,5.25 L16.5,5.25 L16.5,17 C16.5,17.5522847 16.0522847,18 15.5,18 L6,18 L6,18.5 C6,19.0522847 6.44771525,19.5 7,19.5 L16,19.5 C17.1045695,19.5 18,18.6045695 18,17.5 Z" id="Combined-Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g id="new-issues" transform="translate(70.000000, 67.000000)">
+            <g id="Group-6-Copy">
+                <g id="Rectangle-2-Copy">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                    <use fill="#E03E2F" fill-rule="evenodd" xlink:href="#path-4"></use>
+                </g>
+                <path d="M2,59 L415.5,59" id="Path-2" stroke="#D0021B"></path>
+                <path d="M2,136 L415.5,136" id="Path-2-Copy" stroke="#D0021B"></path>
+            </g>
+            <text id="New-Issues" font-family="Helvetica" font-size="18" font-weight="normal" fill="#FFFFFF">
+                <tspan x="22" y="37">New Issues</tspan>
+            </text>
+            <text id="DataError" font-family="Helvetica" font-size="18" font-weight="normal" fill="#FFFFFF">
+                <tspan x="19" y="106">DataError</tspan>
+            </text>
+            <text id="ResponseError" font-family="Helvetica" font-size="18" font-weight="normal" fill="#FFFFFF">
+                <tspan x="19" y="181">ResponseError</tspan>
+            </text>
+            <text id="/api/0/projects/-copy" font-family="Helvetica" font-size="18" font-weight="normal" fill="#E4B4B0">
+                <tspan x="101" y="106">/api/0/projects/</tspan>
+            </text>
+            <text id="/api/0/projects/-copy-2" font-family="Helvetica" font-size="18" font-weight="normal" fill="#E4B4B0">
+                <tspan x="145" y="181">/api/0/projects/</tspan>
+            </text>
+            <g id="icon-circle-exclamation" transform="translate(363.000000, 81.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                <path d="M18,34.6153846 C8.82357646,34.6153846 1.38461538,27.1764235 1.38461538,18 C1.38461538,8.82357646 8.82357646,1.38461538 18,1.38461538 C27.1764235,1.38461538 34.6153846,8.82357646 34.6153846,18 C34.6153846,27.1764235 27.1764235,34.6153846 18,34.6153846 Z M18,31.8461538 C25.6470196,31.8461538 31.8461538,25.6470196 31.8461538,18 C31.8461538,10.3529804 25.6470196,4.15384615 18,4.15384615 C10.3529804,4.15384615 4.15384615,10.3529804 4.15384615,18 C4.15384615,25.6470196 10.3529804,31.8461538 18,31.8461538 Z M16.6153846,19.3846154 L16.6153846,11.0769231 C16.6153846,10.3122211 17.2352981,9.69230769 18,9.69230769 C18.7647019,9.69230769 19.3846154,10.3122211 19.3846154,11.0769231 L19.3846154,19.3846154 C19.3846154,20.1493173 18.7647019,20.7692308 18,20.7692308 C17.2352981,20.7692308 16.6153846,20.1493173 16.6153846,19.3846154 Z M16.6153846,24.9230769 C16.6153846,24.158375 17.2352981,23.5384615 18,23.5384615 C18.7647019,23.5384615 19.3846154,24.158375 19.3846154,24.9230769 C19.3846154,25.6877788 18.7647019,26.3076923 18,26.3076923 C17.2352981,26.3076923 16.6153846,25.6877788 16.6153846,24.9230769 Z" id="Shape"></path>
+            </g>
+            <g id="icon-circle-exclamation" transform="translate(363.000000, 156.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                <path d="M18,34.6153846 C8.82357646,34.6153846 1.38461538,27.1764235 1.38461538,18 C1.38461538,8.82357646 8.82357646,1.38461538 18,1.38461538 C27.1764235,1.38461538 34.6153846,8.82357646 34.6153846,18 C34.6153846,27.1764235 27.1764235,34.6153846 18,34.6153846 Z M18,31.8461538 C25.6470196,31.8461538 31.8461538,25.6470196 31.8461538,18 C31.8461538,10.3529804 25.6470196,4.15384615 18,4.15384615 C10.3529804,4.15384615 4.15384615,10.3529804 4.15384615,18 C4.15384615,25.6470196 10.3529804,31.8461538 18,31.8461538 Z M16.6153846,19.3846154 L16.6153846,11.0769231 C16.6153846,10.3122211 17.2352981,9.69230769 18,9.69230769 C18.7647019,9.69230769 19.3846154,10.3122211 19.3846154,11.0769231 L19.3846154,19.3846154 C19.3846154,20.1493173 18.7647019,20.7692308 18,20.7692308 C17.2352981,20.7692308 16.6153846,20.1493173 16.6153846,19.3846154 Z M16.6153846,24.9230769 C16.6153846,24.158375 17.2352981,23.5384615 18,23.5384615 C18.7647019,23.5384615 19.3846154,24.158375 19.3846154,24.9230769 C19.3846154,25.6877788 18.7647019,26.3076923 18,26.3076923 C17.2352981,26.3076923 16.6153846,25.6877788 16.6153846,24.9230769 Z" id="Shape"></path>
+            </g>
+        </g>
+        <g id="resolved-issues" transform="translate(136.000000, 129.000000)">
+            <g id="Group-6-Copy">
+                <g id="Rectangle-2-Copy">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
+                    <use fill="#57BE8C" fill-rule="evenodd" xlink:href="#path-6"></use>
+                </g>
+                <path d="M2,60 L415.5,60" id="Path-2" stroke="#DAF8E9"></path>
+                <path d="M2,137 L415.5,137" id="Path-2-Copy" stroke="#DAF8E9"></path>
+            </g>
+            <g id="icon-circe-check" transform="translate(363.000000, 82.000000)" fill="#FFFFFF">
+                <g id="icon-circle-check" transform="translate(1.384615, 1.384615)">
+                    <path d="M16.6153846,33.2307692 C7.43896108,33.2307692 0,25.7918082 0,16.6153846 C0,7.43896108 7.43896108,0 16.6153846,0 C25.7918082,0 33.2307692,7.43896108 33.2307692,16.6153846 C33.2307692,25.7918082 25.7918082,33.2307692 16.6153846,33.2307692 Z M16.6153846,30.4615385 C24.2624042,30.4615385 30.4615385,24.2624042 30.4615385,16.6153846 C30.4615385,8.968365 24.2624042,2.76923077 16.6153846,2.76923077 C8.968365,2.76923077 2.76923077,8.968365 2.76923077,16.6153846 C2.76923077,24.2624042 8.968365,30.4615385 16.6153846,30.4615385 Z M14.1923077,20.311089 L22.9055444,11.5978521 C23.4462704,11.0571262 24.3229604,11.0571262 24.8636863,11.5978521 C25.4044123,12.1385781 25.4044123,13.0152681 24.8636863,13.555994 L15.1713786,23.2483017 C14.6306527,23.7890276 13.7539627,23.7890276 13.2132368,23.2483017 L8.48249802,18.517563 C7.94177208,17.976837 7.94177208,17.100147 8.48249802,16.5594211 C9.02322396,16.0186951 9.89991393,16.0186951 10.4406399,16.5594211 L14.1923077,20.311089 Z" id="Shape" fill-rule="nonzero"></path>
+                </g>
+            </g>
+            <g id="icon-circe-check" transform="translate(363.000000, 157.000000)" fill="#FFFFFF">
+                <g id="icon-circle-check" transform="translate(1.384615, 1.384615)">
+                    <path d="M16.6153846,33.2307692 C7.43896108,33.2307692 0,25.7918082 0,16.6153846 C0,7.43896108 7.43896108,0 16.6153846,0 C25.7918082,0 33.2307692,7.43896108 33.2307692,16.6153846 C33.2307692,25.7918082 25.7918082,33.2307692 16.6153846,33.2307692 Z M16.6153846,30.4615385 C24.2624042,30.4615385 30.4615385,24.2624042 30.4615385,16.6153846 C30.4615385,8.968365 24.2624042,2.76923077 16.6153846,2.76923077 C8.968365,2.76923077 2.76923077,8.968365 2.76923077,16.6153846 C2.76923077,24.2624042 8.968365,30.4615385 16.6153846,30.4615385 Z M14.1923077,20.311089 L22.9055444,11.5978521 C23.4462704,11.0571262 24.3229604,11.0571262 24.8636863,11.5978521 C25.4044123,12.1385781 25.4044123,13.0152681 24.8636863,13.555994 L15.1713786,23.2483017 C14.6306527,23.7890276 13.7539627,23.7890276 13.2132368,23.2483017 L8.48249802,18.517563 C7.94177208,17.976837 7.94177208,17.100147 8.48249802,16.5594211 C9.02322396,16.0186951 9.89991393,16.0186951 10.4406399,16.5594211 L14.1923077,20.311089 Z" id="Shape" fill-rule="nonzero"></path>
+                </g>
+            </g>
+            <text id="DataError" font-family="Helvetica" font-size="18" font-weight="normal" fill="#FFFFFF">
+                <tspan x="19" y="107">DataError</tspan>
+            </text>
+            <text id="ResponseError" font-family="Helvetica" font-size="18" font-weight="normal" fill="#FFFFFF">
+                <tspan x="19" y="182">ResponseError</tspan>
+            </text>
+            <text id="Resolved-Issues" font-family="Helvetica" font-size="18" font-weight="normal" fill="#FFFFFF">
+                <tspan x="20" y="38">Resolved Issues</tspan>
+            </text>
+            <text id="/api/0/projects/-copy" font-family="Helvetica" font-size="18" font-weight="normal" fill="#DAF8E9">
+                <tspan x="101" y="107">/api/0/projects/</tspan>
+            </text>
+            <text id="/api/0/projects/-copy-2" font-family="Helvetica" font-size="18" font-weight="normal" fill="#DAF8E9">
+                <tspan x="145" y="182">/api/0/projects/</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
