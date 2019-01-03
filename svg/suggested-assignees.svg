@@ -1,12 +1,7 @@
-<svg id="main" width="347px" height="360px" viewBox="0 0 347 360" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg id="main" width="406" height="396" viewBox="0 0 347 360" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>Suggested Assignees</title>
     <desc>Suggested Assignees Graphic.</desc>
     <style>
-      :root {
-        --startSize: 1;
-        --endSize: 0.9;
-      }
-
       @keyframes rotation {
         0% { transform: rotate(0deg); }
         10% { transform: rotate(-180deg); }
@@ -16,21 +11,21 @@
       }
 
       @keyframes grow-shrink {
-        0% { transform: scale(var(--startSize)); }
-        15% { transform: scale(var(--startSize)); }
-        25% { transform: scale(var(--endSize)); }
-        65% { transform: scale(var(--endSize)); }
-        80% { transform: scale(var(--startSize)); }
-        100% { transform: scale(var(--startSize)); }
+        0% { transform: scale(1); }
+        15% { transform: scale(1); }
+        25% { transform: scale(0.9); }
+        65% { transform: scale(0.9); }
+        80% { transform: scale(1); }
+        100% { transform: scale(1); }
       }
 
       @keyframes grow-shrink-reverse {
-        0% { transform: scale(var(--endSize)); }
-        15% { transform: scale(var(--endSize)); }
-        25% { transform: scale(var(--startSize)); }
-        65% { transform: scale(var(--startSize)); }
-        80% { transform: scale(var(--endSize)); }
-        100% { transform: scale(var(--endSize)); }
+        0% { transform: scale(0.9); }
+        15% { transform: scale(0.9); }
+        25% { transform: scale(1); }
+        65% { transform: scale(1); }
+        80% { transform: scale(0.9); }
+        100% { transform: scale(0.9); }
       }
 
       @keyframes color-change {
@@ -64,44 +59,48 @@
       svg svg {
         overflow: visible;
         transform-origin: center center;
+        will-change: transform;
       }
 
       .artboard {
-        animation: 5s rotation infinite;
+        animation: 10s rotation infinite;
         transform-origin: center center;
+        will-change: transform;
       }
 
       .assignee {
-        animation: 5s rotation infinite;
+        animation: 10s rotation infinite;
         transform-origin: center center;
-        transform: scale(0.9);
+        will-change: transform;
       }
 
       .assignee-contents {
         transform: scale(0.9);
         transform-origin: center center;
+        will-change: transform;
       }
 
       .assignee-start > .assignee-contents {
-        animation: 5s grow-shrink infinite;
+        animation: 10s grow-shrink infinite;
         transform-origin: center center;
+        will-change: transform;
       }
 
       .assignee-start > .assignee-contents > path {
-        animation: 5s color-change infinite;
+        animation: 10s color-change infinite;
       }
 
       .assignee-end > .assignee-contents {
-        animation: 5s grow-shrink-reverse infinite;
+        animation: 10s grow-shrink-reverse infinite;
         transform-origin: center center;
       }
 
       .assignee-end > .assignee-contents > path {
-        animation: 5s color-change-reverse infinite;
+        animation: 10s color-change-reverse infinite;
       }
 
       .release-unresolved path {
-        animation: 5s issue-color-change infinite;
+        animation: 10s issue-color-change infinite;
       }
     </style>
     <defs>
