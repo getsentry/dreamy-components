@@ -13,7 +13,7 @@ const BashCard = ({children, header, ...props}) => (
       <HeaderContent style={{width: '98%'}}>
         <HeaderContent>
           <StyledIconCircleChevron />
-          {header || 'Chrissy — Vim'}
+          {header || 'Chrissy — vim'}
         </HeaderContent>
         <StyledIconClose />
       </HeaderContent>
@@ -21,13 +21,14 @@ const BashCard = ({children, header, ...props}) => (
   >
     {children || (
       <BashContent>
-        <Green>Commit: Dc34EFrfs56Gs</Green>
+        <Green>Commit: 698d6725db</Green>
         <br />
         Author: Chrissy
         <br />
         Date: Wed Jul 18
-        <br />~<br />
-        fix: Don’t fail.
+        <br />
+        <br />
+        Recompute splines to fix component
         <br />
         <Orange>fixes SENTRY-5T4</Orange>
         <Cursor />
