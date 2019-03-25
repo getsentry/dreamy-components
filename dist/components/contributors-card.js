@@ -57,8 +57,8 @@ var ContributorsCard = function ContributorsCard(props) {
       score: 4
     }),
     _react2.default.createElement(ContributorsLine, {
-      name: 'Jess',
-      src: 'https://sentry.io/_assets/people/jessmacqueen-d3703f7a0aaf8b53330704b5f693ed3f9b907c53efeae485e3ce4c34aa55fbd4.jpg',
+      name: 'Colleen',
+      src: 'https://sentry.io/_assets/people/colleenorourke-8b97c40b41b68e31097b8d3dbe21cbb53dd09d7b0034ef5c92c8b951ea6adfc5.jpg',
       score: 11
     }),
     _react2.default.createElement(ContributorsLine, {
