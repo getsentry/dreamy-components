@@ -50,7 +50,7 @@ var BashCard = function BashCard(_ref) {
           HeaderContent,
           null,
           _react2.default.createElement(StyledIconCircleChevron, null),
-          header || 'Chrissy — Vim'
+          header || 'Chrissy — vim'
         ),
         _react2.default.createElement(StyledIconClose, null)
       )
@@ -61,16 +61,15 @@ var BashCard = function BashCard(_ref) {
       _react2.default.createElement(
         Green,
         null,
-        'Commit: Dc34EFrfs56Gs'
+        'Commit: 698d6725db'
       ),
       _react2.default.createElement('br', null),
       'Author: Chrissy',
       _react2.default.createElement('br', null),
       'Date: Wed Jul 18',
       _react2.default.createElement('br', null),
-      '~',
       _react2.default.createElement('br', null),
-      'fix: Don\u2019t fail.',
+      'Recompute splines to fix component',
       _react2.default.createElement('br', null),
       _react2.default.createElement(
         Orange,
