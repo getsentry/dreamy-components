@@ -54,7 +54,7 @@ var SuggestedAssignees = function SuggestedAssignees(props) {
       _react2.default.createElement(AvatarPackage, {
         top: true,
         right: true,
-        src: 'https://sentry.io/_assets/people/denamwangi-e522c9cae55e1a226b03e57bed5a27a44a92fe870fe2de0a6559a8fb4bdaece5.jpg'
+        src: 'https://sentry.io/_assets/people/zaralozano-4586555a2a6bb07088186ec538f09160ec4e2067dfd89fee34f0d1baee59bab7.jpg'
       }),
       _react2.default.createElement(AvatarPackage, {
         bottom: true,
