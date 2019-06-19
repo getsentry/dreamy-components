@@ -79,26 +79,26 @@ var expandOut = /*#__PURE__*/(0, _reactEmotion.keyframes)('0%{opacity:0;transfor
 
 var LineContainer = /*#__PURE__*/(0, _reactEmotion2.default)('div', {
   label: 'LineContainer',
-  target: 'e1diby6x0'
+  target: 'e7b5iqk0'
 })('border-bottom:', function (p) {
   return !p.noDelimiter && '1px solid ' + _theme2.default.borderLight;
 }, ';padding:1.25em 1.5em 1.25em 1em;display:grid;grid-template-columns:auto 1fr 2em;grid-column-gap:1em;align-items:center;');
 
 var StyledBadge = /*#__PURE__*/(0, _reactEmotion2.default)(_badge2.default, {
   label: 'StyledBadge',
-  target: 'e1diby6x1'
+  target: 'e7b5iqk1'
 })('font-size:0.875em;');
 
 var LineChart = /*#__PURE__*/(0, _reactEmotion2.default)('div', {
   label: 'LineChart',
-  target: 'e1diby6x2'
+  target: 'e7b5iqk2'
 })('width:', function (p) {
   return p.score / 12 * 100;
 }, '%;height:6px;background:', _theme2.default.green, ';border-radius:10px;animation:0.5s ', expandOut, ';');
 
 var LineNumber = /*#__PURE__*/(0, _reactEmotion2.default)('div', {
   label: 'LineNumber',
-  target: 'e1diby6x3'
+  target: 'e7b5iqk3'
 })('font-family:sans-serif;font-size:0.875em;text-align:right;color:', _theme2.default.green, ';');
 
 exports.default = ContributorsCard;

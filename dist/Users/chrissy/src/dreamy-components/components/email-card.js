@@ -89,24 +89,24 @@ var ContributorsCard = function ContributorsCard(_ref2) {
 
 var LineContainer = /*#__PURE__*/(0, _reactEmotion2.default)('div', {
   label: 'LineContainer',
-  target: 'ebpkuxd0'
+  target: 'e14yiynw0'
 })('border-bottom:', function (p) {
   return !p.noDelimiter && '1px solid ' + _theme2.default.borderLight;
 }, ';padding:1.25em 1.5em 1.25em 1em;display:grid;grid-template-columns:auto 1fr;grid-column-gap:0.5em;align-items:center;');
 
 var StyledBadge = /*#__PURE__*/(0, _reactEmotion2.default)(_badge2.default, {
   label: 'StyledBadge',
-  target: 'ebpkuxd1'
+  target: 'e14yiynw1'
 })('font-size:0.875em;font-weight:600;color:', _theme2.default.gray3, ';');
 
 var EmailMessage = /*#__PURE__*/(0, _reactEmotion2.default)('span', {
   label: 'EmailMessage',
-  target: 'ebpkuxd2'
+  target: 'e14yiynw2'
 })('color:', _theme2.default.gray2, ';font-size:0.875em;');
 
 var StyledIconMail = /*#__PURE__*/(0, _reactEmotion2.default)(_iconMail2.default, {
   label: 'StyledIconMail',
-  target: 'ebpkuxd3'
+  target: 'e14yiynw3'
 })('width:1.5em;fill:#fff;margin-right:0.5em;');
 
 exports.default = ContributorsCard;
