@@ -12,34 +12,34 @@ const SuggestedAssignees = props => (
       <AvatarPackage
         top
         left
-        src="https://sentry.io/_assets/people/matte-noble-98626d554cd2dcc6fbf5fba79428eb810c8ed7cb75da65baab550cb7d0d32061.jpg"
+        src="https://sentryio-assets.storage.googleapis.com/img/avatars/1.jpg"
       />
       <AvatarPackage
         end
         top
         middle
-        src="https://sentry.io/_assets/people/meredith-9530c4a02bc5e6135f3eb4c731f704ae9456637fb98452d1c8b10a1f91f02014.jpg"
+        src="https://sentryio-assets.storage.googleapis.com/img/avatars/2.jpg"
       />
       <AvatarPackage
         top
         right
-        src="https://sentry.io/_assets/people/zaralozano-4586555a2a6bb07088186ec538f09160ec4e2067dfd89fee34f0d1baee59bab7.jpg"
+        src="https://sentryio-assets.storage.googleapis.com/img/avatars/7.jpg"
       />
       <AvatarPackage
         bottom
         left
-        src="https://sentry.io/_assets/people/colleenorourke-8b97c40b41b68e31097b8d3dbe21cbb53dd09d7b0034ef5c92c8b951ea6adfc5.jpg"
+        src="https://sentryio-assets.storage.googleapis.com/img/avatars/4.jpg"
       />
       <AvatarPackage
         start
         bottom
         middle
-        src="https://sentry.io/_assets/people/benvinegar-28a3febe24d6cdac0ea9d896e3c16570b1c7b31083f08fa5d54f46e8df0e2bda.jpg"
+        src="https://sentryio-assets.storage.googleapis.com/img/avatars/5.jpg"
       />
       <AvatarPackage
         bottom
         right
-        src="https://sentry.io/_assets/people/adhiraj-5faa25498fde92382792066aa195c48ec5b4e2f7530ba4bcada1fd332bb86e98.jpg"
+        src="https://sentryio-assets.storage.googleapis.com/img/avatars/6.jpg"
       />
     </Avatars>
   </Container>

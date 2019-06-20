@@ -24,17 +24,17 @@ const ContributorsCard = ({hash, ...props}) => (
   >
     <LineItem
       name="Ben"
-      src="https://sentry.io/_assets/people/benvinegar-28a3febe24d6cdac0ea9d896e3c16570b1c7b31083f08fa5d54f46e8df0e2bda.jpg"
+      src="https://sentryio-assets.storage.googleapis.com/img/avatars/6.jpg"
       message="Add ArrayJoin if nested column is present"
     />
     <LineItem
-      name="Colleen"
-      src="https://sentry.io/_assets/people/colleenorourke-8b97c40b41b68e31097b8d3dbe21cbb53dd09d7b0034ef5c92c8b951ea6adfc5.jpg"
+      name="Kelly"
+      src="https://sentryio-assets.storage.googleapis.com/img/avatars/4.jpg"
       message="Add ability to reset querybuilder"
     />
     <LineItem
-      name="Chris"
-      src="https://sentry.io/_assets/people/ckj-274e99b013127e748e6ea1e7d6cec774cf60609c7b19872abb984964fdca3604.jpg"
+      name="Meredith"
+      src="https://sentryio-assets.storage.googleapis.com/img/avatars/1.jpg"
       message="Fix aliases for tag columns"
       noDelimiter={true}
     />
