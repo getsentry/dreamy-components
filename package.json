@@ -18,7 +18,9 @@
     "url": "https://github.com/getsentry/dreamy-components/issues"
   },
   "homepage": "https://github.com/getsentry/dreamy-components",
-  "dependencies": {},
+  "dependencies": {
+    "request": "^2.88.0"
+  },
   "devDependencies": {
     "@emotion/is-prop-valid": "^0.7.1",
     "@storybook/addon-actions": "^3.4.8",
