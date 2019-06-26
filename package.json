@@ -18,58 +18,18 @@
     "url": "https://github.com/getsentry/dreamy-components/issues"
   },
   "homepage": "https://github.com/getsentry/dreamy-components",
-  "dependencies": {
-    "fs-extra": "^8.0.1",
-    "request": "^2.88.0"
-  },
   "devDependencies": {
+    "fs-extra": "^8.0.1",
+    "request": "^2.88.0",
     "@emotion/is-prop-valid": "^0.7.1",
     "@storybook/addon-actions": "^3.4.8",
     "@storybook/addon-links": "^3.4.8",
     "@storybook/addons": "^3.4.8",
-    "@storybook/react": "^3.4.8",
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-plugin-add-module-exports": "^0.2.1",
-    "babel-plugin-emotion": "^9.2.6",
-    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-react": "^6.24.1",
-    "babel-runtime": "^6.26.0",
-    "emotion": "^9.2.6",
-    "emotion-server": "^9.2.6",
-    "eslint": "4.4.1",
-    "eslint-config-prettier": "^3.0.1",
-    "eslint-plugin-prettier": "^2.6.2",
-    "eslint-plugin-react": "^7.11.1",
-    "husky": "^0.14.3",
-    "lint-staged": "^7.2.2",
-    "prettier": "^1.14.1",
-    "react": "16.3.2",
-    "react-dom": "^16.4.1",
-    "react-emotion": "9.1.2",
-    "stylelint": "^9.5.0",
-    "stylelint-config-recommended": "^2.1.0",
-    "stylelint-config-styled-components": "^0.1.1",
-    "stylelint-processor-styled-components": "^1.3.0"
+    "@storybook/react": "^3.4.8"
   },
   "scripts": {
     "start": "start-storybook -p 6006",
     "storybook": "start-storybook -p 6006",
-    "precommit": "lint-staged",
-    "static": "npx babel-node staticBuilder.js",
-    "dynamic": "npx babel components/*.js --out-dir dist",
-    "lint": "node_modules/.bin/eslint . --ext .js,.jsx",
-    "lint:css": "stylelint components/*.jsx"
-  },
-  "lint-staged": {
-    "./components/*.{js,jsx}": [
-      "eslint --fix",
-      "prettier --write",
-      "stylelint components/*.jsx",
-      "npm run static",
-      "npm run dynamic",
-      "git add"
-    ]
+    "get": "npx babel-node staticBuilder.js"
   }
 }

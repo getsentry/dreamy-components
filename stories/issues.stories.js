@@ -1,6 +1,8 @@
 import React from 'react';
 import {storiesOf} from '@storybook/react';
 
-import Issues from '../components/issues';
+import issues from '../svg/issues.svg';
 
-storiesOf('Issues').add('default', () => <Issues style={{margin: '10% auto'}} />);
+storiesOf('Issues').add('default', () => (
+  <object type="image/svg+xml" data={issues}></object>
+));

@@ -1,8 +1,8 @@
 import React from 'react';
 import {storiesOf} from '@storybook/react';
 
-import Contributors from '../components/contributors';
+import contributors from '../svg/contributors.svg';
 
 storiesOf('Contributors').add('default', () => (
-  <Contributors style={{margin: '10% auto'}} />
+  <object type="image/svg+xml" data={contributors}></object>
 ));

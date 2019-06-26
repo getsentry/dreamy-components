@@ -7,7 +7,7 @@ const headers = {
   'X-Figma-Token': '15587-d15f8f57-cd23-4df2-940b-bedeb9cc1263'
 };
 
-const writeDir = './static_components';
+const writeDir = './svg';
 
 const getDocument = () => new Promise(resolve => {
   request.get(

@@ -1,6 +1,8 @@
 import React from 'react';
 import {storiesOf} from '@storybook/react';
 
-import Emails from '../components/emails';
+import emails from '../svg/emails.svg';
 
-storiesOf('Emails').add('default', () => <Emails style={{margin: '10% auto'}} />);
+storiesOf('Emails').add('default', () => (
+  <object type="image/svg+xml" data={emails}></object>
+));
