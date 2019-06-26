@@ -1,10 +1,13 @@
 const fs = require('fs');
 const request = require('request');
+const fsExtra = require('fs-extra');
 
 //remove this for oAuth before merging into master
 const headers = {
   'X-Figma-Token': '15587-d15f8f57-cd23-4df2-940b-bedeb9cc1263'
 };
+
+const writeDir = './static_components';
 
 const getDocument = () => new Promise(resolve => {
   request.get(
@@ -59,7 +62,16 @@ getDocument().then(response => {
     Promise.all(
       urls.map(url => getSvg(url))
     ).then(svgs => {
-      console.log(svgs.map((svg, index) => artboards[index].name))
+
+      //delete everything in the write directory
+      fsExtra.emptyDirSync(writeDir)
+
+      svgs.map((svg, index) => {
+        fs.writeFileSync(
+          `${writeDir}/${artboards[index].name}.svg`,
+          svg
+        );
+      })
     })
   });
 });

@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/getsentry/dreamy-components",
   "dependencies": {
+    "fs-extra": "^8.0.1",
     "request": "^2.88.0"
   },
   "devDependencies": {
