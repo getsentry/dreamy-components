@@ -21,14 +21,8 @@
   "scripts": {
     "start": "start-storybook -p 6006",
     "storybook": "start-storybook -p 6006",
-    "get": "node staticBuilder.js",
+    "get": "node get.js",
     "build-storybook": "build-storybook"
-  },
-  "dependencies": {
-    "glob": "^7.1.4",
-    "gulp": "^4.0.2",
-    "gulp-concat": "^2.6.1",
-    "svgo": "^1.2.2"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
@@ -38,6 +32,10 @@
     "@storybook/react": "^5.1.9",
     "babel-loader": "^8.0.6",
     "fs-extra": "^8.0.1",
+    "glob": "^7.1.4",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "svgo": "^1.2.2",
     "request": "^2.88.0"
   }
 }
