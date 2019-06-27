@@ -24,7 +24,12 @@
     "get": "node staticBuilder.js",
     "build-storybook": "build-storybook"
   },
-  "dependencies": {},
+  "dependencies": {
+    "glob": "^7.1.4",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "svgo": "^1.2.2"
+  },
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@storybook/addon-actions": "^5.1.9",

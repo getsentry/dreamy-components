@@ -1,4 +1,4 @@
-@@keyframes spin {
+@keyframes spin {
   0% {
     transform: rotate(0deg);
   }
@@ -38,4 +38,5 @@
 
 #assignee-dial {
   animation: 5s spin ease-out infinite;
+  transform-origin: center center;
 }

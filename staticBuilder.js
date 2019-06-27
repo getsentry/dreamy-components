@@ -1,6 +1,7 @@
 const fs = require('fs');
 const request = require('request');
 const fsExtra = require('fs-extra');
+const { spawn } = require('child_process');
 
 //remove this for oAuth before merging into master
 const headers = {
@@ -71,6 +72,7 @@ getDocument().then(response => {
           `${writeDir}/${artboards[index].name}.svg`,
           svg
         );
+        spawn('gulp', ['inlineStyles']);
       })
     })
   });
