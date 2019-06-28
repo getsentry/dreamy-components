@@ -134,11 +134,11 @@
 }
 
 #checkmark-1, #checkmark-2, #checkmark-3, #checkmark-4 {
-  animation: 2s fade-in ease-out;
+  animation: 5s fade-in ease-out;
 }
 
 #exclamation-1, #exclamation-2, #exclamation-3, #exclamation-4 {
-  animation: 2s fade-out ease-out;
+  animation: 5s fade-out ease-out;
 }
 
 #release-2, #checkmark-3, #exclamation-2, #rectangle-2 {
