@@ -66,6 +66,53 @@
   }
 }
 
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  1% {
+    opacity: 1;
+  }
+
+  99% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+
+  1% {
+    opacity: 0;
+  }
+
+  99% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes turn-green {
+  5% {
+    fill: #57BE8C;
+  }
+
+  97% {
+    fill: #57BE8C;
+  }
+}
+
 #resolved-issues, #email-card-bottom, #card-top {
   animation: 0.5s animate-top-left-in cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transform-origin: center center;
@@ -86,14 +133,26 @@
   transform-origin: center center;
 }
 
-#release-2 {
-  animation-delay: 0.1s;
+#rectangle-1, #rectangle-2, #rectangle-3, #rectangle-4 {
+  animation: 5s turn-green ease-out;
 }
 
-#release-3 {
-  animation-delay: 0.2s;
+#checkmark-1, #checkmark-2, #checkmark-3, #checkmark-4 {
+  animation: 5s fade-in ease-out;
 }
 
-#release-4 {
-  animation-delay: 0.3s;
+#exclamation-1, #exclamation-2, #exclamation-3, #exclamation-4 {
+  animation: 5s fade-out ease-out;
+}
+
+#release-2, #checkmark-3, #exclamation-2, #rectangle-2 {
+  animation-delay: 0.5s;
+}
+
+#release-3, #checkmark-2, #exclamation-3, #rectangle-3 {
+  animation-delay: 1s;
+}
+
+#release-4, #checkmark-1, #exclamation-4, #rectangle-4 {
+  animation-delay: 1.5s;
 }
