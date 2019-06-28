@@ -3,7 +3,7 @@
     transform: rotate(0deg);
   }
 
-  4% {
+  8% {
     transform: rotate(60deg);
   }
 
@@ -11,7 +11,7 @@
     transform: rotate(60deg);
   }
 
-  30% {
+  33% {
     transform: rotate(240deg);
   }
 
@@ -19,11 +19,7 @@
     transform: rotate(240deg);
   }
 
-  63% {
-    transform: rotate(180deg);
-  }
-
-  70% {
+  68% {
     transform: rotate(180deg);
   }
 
@@ -71,7 +67,7 @@
 }
 
 #resolved-issues, #email-card-bottom, #card-top {
-  animation: 0.5s animate-top-left-in cubic-bezier(0.68, -0.55, 0.265, 1.55); 
+  animation: 0.5s animate-top-left-in cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transform-origin: center center;
 }
 
