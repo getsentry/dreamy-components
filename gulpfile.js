@@ -11,18 +11,24 @@ const fs = require("fs");
 */
 
 const inlineStyles = (done) => {
+  let allStyles = "";
+
+  glob("styles/*.css", (err, files) => {
+    allStyles = files.reduce((accumulator, currentValue) => {
+      return accumulator + fs.readFileSync(currentValue, "utf8");
+    }, "");
+  });
+
   glob("svg/*.svg", (err, files) => {
     files.map(f => {
-      const cssFilePath = f.replace(/\.svg$/, ".css").replace(/^svg\//, "styles/");
-      if (!fs.existsSync(cssFilePath)) return;
-      const cssFile = fs.readFileSync(cssFilePath, "utf8");
       const svgFile = fs.readFileSync(f, "utf8");
-      const concat = svgFile.replace(/\<\/svg\>/, `<style>${cssFile}</style></svg>`)
+      const concat = svgFile.replace(/\<\/svg\>/, `<style>${allStyles}</style></svg>`)
       new Svgo({plugins: [{inlineStyles: false}, {convertStyleToAttrs: false}, {removeViewBox: false}, {removeDimensions: false}]}).optimize(concat).then(result => {
-        fs.writeFileSync(`./svg/${f.substring(f.lastIndexOf('/')+1)}`, result.data)
+        fs.writeFileSync(`./dist/${f.substring(f.lastIndexOf('/')+1)}`, result.data)
       })
     });
-  })
+  });
+
   return done();
 };
 

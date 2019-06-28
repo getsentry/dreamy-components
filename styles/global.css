@@ -1,0 +1,103 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  4% {
+    transform: rotate(60deg);
+  }
+
+  25% {
+    transform: rotate(60deg);
+  }
+
+  30% {
+    transform: rotate(240deg);
+  }
+
+  60% {
+    transform: rotate(240deg);
+  }
+
+  63% {
+    transform: rotate(180deg);
+  }
+
+  70% {
+    transform: rotate(180deg);
+  }
+
+  96% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes animate-top-left-in {
+  0% {
+    transform: translate(-5%, -5%);
+  }
+
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+
+@keyframes animate-bottom-right-in {
+  0% {
+    transform: translate(5%, 5%);
+  }
+
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+
+@keyframes resolve {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+#resolved-issues, #email-card-bottom, #card-top {
+  animation: 0.75s animate-top-left-in cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transform-origin: center center;
+}
+
+#file-changes, #email-card-top, #card-bottom {
+  animation: 0.5s animate-bottom-right-in cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transform-origin: center center;
+}
+
+#assignee-dial {
+  animation: 10s spin cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
+  transform-origin: center center;
+}
+
+#release-1, #release-2, #release-3, #release-4 {
+  animation: 0.3s resolve ease-out;
+  transform-origin: center center;
+}
+
+#release-2 {
+  animation-delay: 0.1s;
+}
+
+#release-3 {
+  animation-delay: 0.2s;
+}
+
+#release-4 {
+  animation-delay: 0.3s;
+}
