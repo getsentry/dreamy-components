@@ -22,6 +22,7 @@
     "start": "start-storybook -p 6006",
     "storybook": "start-storybook -p 6006",
     "get": "node get.js",
+    "watch": "npx gulp watch",
     "build-storybook": "build-storybook"
   },
   "devDependencies": {
