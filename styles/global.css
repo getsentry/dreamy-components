@@ -141,14 +141,14 @@
   animation: 5s fade-out ease-out;
 }
 
-#release-2, #checkmark-3, #exclamation-2, #rectangle-2 {
+#release-2, #checkmark-2, #exclamation-2, #rectangle-2 {
   animation-delay: 0.5s;
 }
 
-#release-3, #checkmark-2, #exclamation-3, #rectangle-3 {
+#release-3, #checkmark-3, #exclamation-3, #rectangle-3 {
   animation-delay: 1s;
 }
 
-#release-4, #checkmark-1, #exclamation-4, #rectangle-4 {
+#release-4, #checkmark-4, #exclamation-4, #rectangle-4 {
   animation-delay: 1.5s;
 }

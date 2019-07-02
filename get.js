@@ -30,7 +30,7 @@ const getSvgUrls = ids => new Promise(resolve => {
         //ids expect a comma-seperated string
         ids: ids.join(","),
         format: 'svg',
-        svg_include_id: true
+          svg_include_id: true
       }
     }
   , function(error, response, body) {
