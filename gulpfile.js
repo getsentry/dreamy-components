@@ -1,6 +1,5 @@
 const gulp = require("gulp");
 const glob = require("glob");
-const concat = require('gulp-concat');
 const Svgo = require("svgo");
 const fs = require("fs");
 

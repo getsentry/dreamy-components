@@ -34,11 +34,7 @@
     "fs-extra": "^8.0.1",
     "glob": "^7.1.4",
     "gulp": "^4.0.2",
-    "gulp-concat": "^2.6.1",
     "request": "^2.88.0",
     "svgo": "^1.2.2"
-  },
-  "dependencies": {
-    "gulp-cli": "^2.2.0"
   }
 }
