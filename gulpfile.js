@@ -9,22 +9,50 @@ const fs = require("fs");
   run node stuff
 */
 
+const svgoOpts = {
+  plugins: [
+    {
+      inlineStyles: false
+    }, {
+      convertStyleToAttrs: false
+    }, {
+      removeViewBox: false
+    }, {
+      removeDimensions: false
+    }
+  ]
+};
+
+const getStyles = (name) => new Promise(resolve => {
+  const path = `./styles/${name}.css`;
+
+  if (!fs.existsSync(path)) resolve(null);
+  fs.readFile(path, "utf8", (err, data) => {
+    resolve(data);
+  })
+});
+
+const getSvg = (name) => new Promise(resolve => {
+  const path = `./svg/${name}.svg`;
+
+  if (!fs.existsSync(path)) resolve(null);
+  fs.readFile(path, "utf8", (err, data) => {
+    resolve(data);
+  })
+});
+
 const inlineStyles = (done) => {
   let allStyles = "";
 
-  glob("styles/*.css", (err, files) => {
-    allStyles = files.reduce((accumulator, currentValue) => {
-      return accumulator + fs.readFileSync(currentValue, "utf8");
-    }, "");
-  });
-
   glob("svg/*.svg", (err, files) => {
-    files.map(f => {
-      const svgFile = fs.readFileSync(f, "utf8");
-      const concat = svgFile.replace(/\<\/svg\>/, `<style>${allStyles}</style></svg>`)
-      new Svgo({plugins: [{inlineStyles: false}, {convertStyleToAttrs: false}, {removeViewBox: false}, {removeDimensions: false}]}).optimize(concat).then(result => {
-        fs.writeFileSync(`./dist/${f.substring(f.lastIndexOf('/')+1)}`, result.data)
-      })
+    files.map(filePath => {
+      const fileName = filePath.substring(filePath.lastIndexOf('/') + 1, filePath.lastIndexOf('.'));
+      Promise.all([getStyles(fileName), getSvg(fileName)]).then(([styles, svg]) => {
+        const concat = styles ? svg.replace(/\<\/svg\>/, `<style>${styles}</style></svg>`) : svg;
+        new Svgo(svgoOpts).optimize(concat).then(result => {
+          fs.writeFileSync(`./dist/${fileName}.svg`, result.data)
+        })
+      });
     });
   });
 

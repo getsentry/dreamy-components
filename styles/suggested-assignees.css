@@ -1,0 +1,38 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  8% {
+    transform: rotate(60deg);
+  }
+
+  25% {
+    transform: rotate(60deg);
+  }
+
+  33% {
+    transform: rotate(240deg);
+  }
+
+  60% {
+    transform: rotate(240deg);
+  }
+
+  68% {
+    transform: rotate(180deg);
+  }
+
+  96% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+#assignee-dial {
+  animation: 10s spin cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
+  transform-origin: center center;
+}
