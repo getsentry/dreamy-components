@@ -1,4 +1,4 @@
-![](https://imgur.com/yMQaG5M.gif)
+![](https://i.imgur.com/NIggrRK.gif)
 
 ### Dreamy Components
 
