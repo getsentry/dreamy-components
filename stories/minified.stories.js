@@ -1,6 +1,8 @@
 import React from 'react';
 import {storiesOf} from '@storybook/react';
 
-import Minified from '../components/minified';
+import minified from '../dist/minified.svg';
 
-storiesOf('Minified').add('default', () => <Minified style={{marginTop: '10%'}} />);
+storiesOf('Minified').add('default', () => (
+  <object type="image/svg+xml" data={minified}></object>
+));

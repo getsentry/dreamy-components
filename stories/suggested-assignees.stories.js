@@ -1,8 +1,8 @@
 import React from 'react';
 import {storiesOf} from '@storybook/react';
 
-import SuggestedAssignees from '../components/suggested-assignees';
+import suggestedAssignees from '../dist/suggested-assignees.svg';
 
 storiesOf('Suggested Assignees').add('default', () => (
-  <SuggestedAssignees style={{margin: '8% auto'}} />
+  <object type="image/svg+xml" data={suggestedAssignees}></object>
 ));

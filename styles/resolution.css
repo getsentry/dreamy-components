@@ -1,0 +1,75 @@
+@keyframes resolve {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  } 
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  1% {
+    opacity: 1;
+  }
+
+  99% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+
+  1% {
+    opacity: 0;
+  }
+
+  99% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#release-1, #release-2, #release-3, #release-4 {
+  animation: 0.3s resolve ease-out;
+  transform-origin: center center;
+}
+
+#checkmark-1, #checkmark-2, #checkmark-3, #checkmark-4 {
+  animation: 5s fade-in ease-out;
+}
+
+#exclamation-1, #exclamation-2, #exclamation-3, #exclamation-4 {
+  animation: 5s fade-out ease-out;
+}
+
+#release-2, #checkmark-2, #exclamation-2, #rectangle-2 {
+  animation-delay: 0.25s;
+}
+
+#release-3, #checkmark-3, #exclamation-3, #rectangle-3 {
+  animation-delay: 0.5s;
+}
+
+#release-4, #checkmark-4, #exclamation-4, #rectangle-4 {
+  animation-delay: 0.75s;
+}
