@@ -1,0 +1,34 @@
+@keyframes animate-top-left-in {
+    0% {
+      transform: translate(-5%, 3%);
+    }
+  
+    100% {
+      transform: translate(0%, 0%);
+    }
+  }
+  
+  @keyframes animate-bottom-right-in { 
+    0% {
+      transform: translate(5%, 3%);
+    }
+  
+    100% {
+      transform: translate(0%, 0%);
+    }
+  }
+  
+  #chat-box {
+    animation: 0.5s animate-top-left-in cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transform-origin: center center;
+  }
+  
+  #chat-avatar {
+    animation: 0.5s animate-bottom-right-in cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transform-origin: center center;
+  }
+  
+
+
+
+
